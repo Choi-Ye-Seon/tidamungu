@@ -1,9 +1,9 @@
 // min-width:1024px 미디어쿼리 변수 선언
 let mediaQuery = window.matchMedia('(min-width: 1024px)');
-// gsap 미디어쿼리
-let mm = gsap.matchMedia();
 // max-width:1023px 미디어쿼리 변수 선언
 let mobileMediaQuery = window.matchMedia('(max-width: 1023px)');
+// gsap 미디어쿼리
+let mm = gsap.matchMedia();
 
 
 
@@ -76,7 +76,7 @@ function headerEffect() {
       $(this).removeClass('show');
     });
   } else {
-    // 1024px 미만일 때 hover 이벤트를 제거
+    // 1024px 미만
     $('#nav .swiper-slide').off('mouseenter mouseleave');
     $('#nav .submenu-area').off('mouseenter mouseleave');
   }
@@ -135,28 +135,17 @@ function handleClick() {
   // header open 클래스 추가
   const isOpen = $('#header').toggleClass('open').hasClass('open');
   if (isOpen) {
-    navStart.restart(); // 애니메이션 처음부터 실행
+    navStart.restart(); 
   } else {
-    navReverse.restart(); // 애니메이션 처음부터 실행
+    navReverse.restart();
   }
 }
-// 메모) restart()는 **GSAP 속성(메서드)**입니다. 정확히는 GSAP의 Timeline 또는 Tween 객체에 포함된 메서드로, 해당 애니메이션을 처음부터 다시 시작하도록 설계된 기능
-// play()는 애니메이션을 현재 상태에서 이어서 재생
-// #header의 상태에 따라 열리거나 닫히는 애니메이션을 항상 초기 상태부터 다시 실행하고 싶기 때문에 restart()를 사용
-// navStart가 이미 실행되었거나 완료된 상태에서도 동일한 애니메이션을 반복적으로 실행하려면 restart()가 필요
-// 애니메이션이 완료된 상태에서는 play()를 호출해도 효과가 없습니다.
-// 반면, restart()는 애니메이션의 상태와 관계없이 항상 처음부터 실행되므로 안정적입니다.
-
-// **off와 on**은 jQuery 이벤트 핸들러 메서드로, 이벤트 중복을 방지하고 새로운 핸들러를 등록하는 데 사용됩니다.
-// gsap.timeline()을 두 개 사용하는 이유는 메뉴를 열 때와 닫을 때의 애니메이션 흐름을 분리하여 독립적으로 제어하기 위해서입니다.
-// 두 개의 timeline을 사용한다고 해서 반드시 off와 on을 써야 하는 것은 아니지만, 이벤트 핸들러가 중복되는 문제를 피하려면 off와 on을 잘 활용해야 합니다!
 
 
 // btn-menu click 이벤트 실행
 mm.add('(min-width: 1024px)', () => {
   $('.btn-menu').on('click', handleClick);
 
-  // 미디어 쿼리 벗어날 때 초기화
   return () => {
     $('#header').removeClass('fixed open'); 
     $('#nav .submenu-area').removeClass('show'); 

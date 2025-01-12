@@ -186,6 +186,7 @@ mm.add("(min-width: 1024px)", () => {
   gsap.ticker.add(tickerHandler);
 
 
+
   // new arrival .link-product hover 이벤트
   $(".new-arrival-wrap .link-product").hover(
     function () {
@@ -196,13 +197,11 @@ mm.add("(min-width: 1024px)", () => {
     }
   );
 
-  // 초기화 로직
   return () => {
-    // 이벤트 제거
     window.removeEventListener("pointermove", pointerMoveHandler);
     gsap.ticker.remove(tickerHandler);
 
-    $(".new-arrival-wrap .cursor").css("opacity", 1); // opacity 초기화
+    $(".new-arrival-wrap .cursor").css("opacity", 1);
   };
 });
 
@@ -301,9 +300,6 @@ mm.add('(min-width: 1024px)', () => {
   .to(".sc-slogan .slogan-shape",{y:'-23vh'},"<+=0.2");
 
   return () => {
-    // 모든 요소 초기 상태로 되돌리기
-    // ScrollTrigger 제거 
-    // kill() : kill()은 GSAP의 ScrollTrigger에서 제공하는 메서드로, 특정 ScrollTrigger 인스턴스를 제거하는 데 사용됩니다. 이 메서드는 ScrollTrigger가 동작하지 않도록 완전히 해제하며, 애니메이션과 이벤트 리스너도 함께 제거합니다.
     if (slogan.scrollTrigger) {
       slogan.scrollTrigger.kill();
     }
@@ -335,7 +331,7 @@ mm.add('(max-width: 1023px)', () => {
       trigger:".sc-slogan",
       start:"10% 100%",
       end:"100% 70%",
-      markers:true,
+      // markers:true,
       scrub:1
     }
   },"<")

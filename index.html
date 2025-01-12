@@ -7,14 +7,22 @@
     <title>티다문구점</title>
 
     <!-- Favicon -->
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- lottie JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <!-- gsap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -23,15 +31,7 @@
     <!-- Main JS -->
     <script defer src="./assets/js/common.js"></script>
     <script defer src="./assets/js/main.js"></script>
-
-    <!-- lottie JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
-
-    <!-- gsap cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
-
 
 <body>
 
@@ -293,10 +293,8 @@
                     </ul>
                 </div>
                 <!-- // digital lnb -->
-
             </div>
             <!-- // LNB : PC -->
-
         </nav>
         <!-- // Nav -->
 
@@ -304,14 +302,18 @@
         <div class="nav-all">
             <div class="nav-inner">
                 <ul class="depth01-list" role="menu">
-                    <li class="depth01-item active" data-tab=".nav-made" role="presentation"><a href="#"
-                            class="link-depth01" role="menuitem" aria-selected="true">티다 Made</a></li>
-                    <li class="depth01-item" data-tab=".nav-mobile" role="presentation"><a href="#" class="link-depth01"
-                            role="menuitem" aria-selected="false">Mobile</a></li>
-                    <li class="depth01-item" data-tab=".nav-life" role="presentation"><a href="#" class="link-depth01"
-                            role="menuitem" aria-selected="false">Life</a></li>
-                    <li class="depth01-item" data-tab=".nav-digital" role="presentation"><a href="#" class="link-depth01"
-                            role="menuitem" aria-selected="false">Digital</a></li>
+                    <li class="depth01-item active" data-tab=".nav-made" role="presentation">
+                        <a href="#" class="link-depth01" role="menuitem">티다 Made</a>
+                    </li>
+                    <li class="depth01-item" data-tab=".nav-mobile" role="presentation">
+                        <a href="#" class="link-depth01" role="menuitem">Mobile</a>
+                    </li>
+                    <li class="depth01-item" data-tab=".nav-life" role="presentation">
+                        <a href="#" class="link-depth01" role="menuitem">Life</a>
+                    </li>
+                    <li class="depth01-item" data-tab=".nav-digital" role="presentation">
+                        <a href="#" class="link-depth01" role="menuitem">Digital</a>
+                    </li>
                 </ul>
 
                 <div class="nav-wide nav-made view">
@@ -498,7 +500,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="top-nav" role="menu">
                     <a href="#" class="special link-nav" role="menuitem">
                         <i class="ic-special" aria-hidden="true"></i>
@@ -908,12 +909,9 @@
                     </ul>
                 </div>
                 <!-- // digital lnb -->
-
             </div>
             <!-- // LNB : PC -->
-
         </div>
-
     </header>
 
     <main id="container">
@@ -1015,10 +1013,10 @@
                             <span class="curr"><span class="blind">현재슬라이드</span></span>
                             <span class="total"><span class="blind">총 슬라이드</span></span>
                         </div>
-                        <button class="btn-control swiper-play" role="button" aria-pressed="true"><span
-                                class="blind">슬라이드 재생</span></button>
-                        <button class="btn-control swiper-pause" role="button" aria-pressed="false"><span
-                                class="blind">슬라이드 멈춤</span></button>
+                        <button class="btn-control swiper-play" aria-pressed="true"><span class="blind">슬라이드
+                                재생</span></button>
+                        <button class="btn-control swiper-pause" aria-pressed="false"><span class="blind">슬라이드
+                                멈춤</span></button>
                     </div>
                 </div>
             </section>
@@ -1039,13 +1037,13 @@
                         <h2>Best</h2>
                     </div>
                     <ul class="tab-list" role="tablist">
-                        <li class="tab-menu mobile active" data-tab=".best-mobile" role="tab" aria-pressed="true">
+                        <li class="tab-menu mobile active" data-tab=".best-mobile" role="tab">
                             <span>Mobile</span>
                         </li>
-                        <li class="tab-menu life " data-tab=".best-life" role="tab" aria-pressed="false">
+                        <li class="tab-menu life " data-tab=".best-life" role="tab">
                             <span>Life</span>
                         </li>
-                        <li class="tab-menu digital" data-tab=".best-digital" role="tab" aria-pressed="false">
+                        <li class="tab-menu digital" data-tab=".best-digital" role="tab">
                             <span>Digital</span>
                         </li>
                     </ul>
@@ -1057,17 +1055,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd01.png" alt="곽철이 아크릴 스마트톡">
-                                        <span class="num-mark"><span class="blind">순위</span>1</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">곽철이 아크릴 스마트톡</span>
-                                        <span class="sel-price" aria-label="할인판매가">29% <strong>9,500</strong></span>
-                                        <span class="cost" aria-label="원가">13,500</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">곽철이 아크릴 스마트톡</span>
+                                        <span class="sel-price">29% <strong>9,500</strong></span>
+                                        <span class="cost">13,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1076,17 +1074,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd02.png" alt="아이폰 카메라보호 강화유리필름 2매">
-                                        <span class="num-mark"><span class="blind">순위</span>2</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">벤토사</span>
-                                        <span class="name" aria-label="상품명">아이폰 카메라보호 강화유리필름 2매</span>
-                                        <span class="sel-price" aria-label="할인판매가">27% <strong>6,900</strong></span>
-                                        <span class="cost" aria-label="원가">9,500</span>
+                                        <span class="category">벤토사</span>
+                                        <span class="name">아이폰 카메라보호 강화유리필름 2매</span>
+                                        <span class="sel-price">27% <strong>6,900</strong></span>
+                                        <span class="cost">9,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(2)</span></span>
-                                            <span class="like" aria-label="좋아요수">64</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(2)</span></span>
+                                            <span class="like">64</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1095,17 +1093,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd03.png" alt="갤럭시 Z폴드6 슬림 S펜 케이스">
-                                        <span class="num-mark"><span class="blind">순위</span>3</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">갤럭시 Z폴드6 슬림 S펜 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">41% <strong>64,800</strong></span>
-                                        <span class="cost" aria-label="원가">110,000</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">갤럭시 Z폴드6 슬림 S펜 케이스</span>
+                                        <span class="sel-price">41% <strong>64,800</strong></span>
+                                        <span class="cost">110,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">2.3</span><span
-                                                    class="grade-num" aria-label="리뷰수">(3)</span></span>
-                                            <span class="like" aria-label="좋아요수">38</span>
+                                            <span class="review"><span class="grade">2.3</span><span
+                                                    class="grade-num">(3)</span></span>
+                                            <span class="like">38</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1114,17 +1112,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd04.png" alt="아이폰16시리즈 할로락 클래식 케이스">
-                                        <span class="num-mark"><span class="blind">순위</span>4</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">ESR</span>
-                                        <span class="name" aria-label="상품명">아이폰16시리즈 할로락 클래식 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">36% <strong>15,900</strong></span>
-                                        <span class="cost" aria-label="원가">24,000</span>
+                                        <span class="category">ESR</span>
+                                        <span class="name">아이폰16시리즈 할로락 클래식 케이스</span>
+                                        <span class="sel-price">36% <strong>15,900</strong></span>
+                                        <span class="cost">24,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(2)</span></span>
-                                            <span class="like" aria-label="좋아요수">40</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(2)</span></span>
+                                            <span class="like">40</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1133,17 +1131,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd05.png" alt="삼성 25W 유무선 초고속 보조배터리">
-                                        <span class="num-mark"><span class="blind">순위</span>5</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">삼성 25W 유무선 초고속 보조배터리</span>
-                                        <span class="sel-price" aria-label="할인판매가">46% <strong>38,000</strong></span>
-                                        <span class="cost" aria-label="원가">71,500</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">삼성 25W 유무선 초고속 보조배터리</span>
+                                        <span class="sel-price">46% <strong>38,000</strong></span>
+                                        <span class="cost">71,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
-                                            <span class="like" aria-label="좋아요수">47</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(1)</span></span>
+                                            <span class="like">47</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1152,17 +1150,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd06.png" alt="블루투스5.3 ANC노이즈캔슬링 이어폰">
-                                        <span class="num-mark"><span class="blind">순위</span>6</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">아이리버</span>
-                                        <span class="name" aria-label="상품명">블루투스5.3 ANC노이즈캔슬링 이어폰</span>
-                                        <span class="sel-price" aria-label="할인판매가">56% <strong>38,900</strong></span>
-                                        <span class="cost" aria-label="원가">89,000</span>
+                                        <span class="category">아이리버</span>
+                                        <span class="name">블루투스5.3 ANC노이즈캔슬링 이어폰</span>
+                                        <span class="sel-price">56% <strong>38,900</strong></span>
+                                        <span class="cost">89,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(3)</span></span>
-                                            <span class="like" aria-label="좋아요수">39</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(3)</span></span>
+                                            <span class="like">39</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1171,17 +1169,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd07.png" alt="짱구흰둥이 에어판 프로/프로2 케이스">
-                                        <span class="num-mark"><span class="blind">순위</span>7</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">BOB</span>
-                                        <span class="name" aria-label="상품명">짱구흰둥이 에어판 프로/프로2 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">10% <strong>13,320</strong></span>
-                                        <span class="cost" aria-label="원가">14,800</span>
+                                        <span class="category">BOB</span>
+                                        <span class="name">짱구흰둥이 에어판 프로/프로2 케이스</span>
+                                        <span class="sel-price">10% <strong>13,320</strong></span>
+                                        <span class="cost">14,800</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">4</span><span
-                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
-                                            <span class="like" aria-label="좋아요수">19</span>
+                                            <span class="review"><span class="grade">4</span><span
+                                                    class="grade-num">(1)</span></span>
+                                            <span class="like">19</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1190,17 +1188,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd08.png" alt="프로13 7세대 마이폴리오 거치케이스">
-                                        <span class="num-mark"><span class="blind">순위</span>8</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">아라리</span>
-                                        <span class="name" aria-label="상품명">프로13 7세대 마이폴리오 거치케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">16% <strong>30,000</strong></span>
-                                        <span class="cost" aria-label="원가">35,900</span>
+                                        <span class="category">아라리</span>
+                                        <span class="name">프로13 7세대 마이폴리오 거치케이스</span>
+                                        <span class="sel-price">16% <strong>30,000</strong></span>
+                                        <span class="cost">35,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">8</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">8</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1209,17 +1207,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/mobile-pd09.png" alt="애플워치 액정보호 풀커버 투명케이스">
-                                        <span class="num-mark"><span class="blind">순위</span>9</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">벤토사</span>
-                                        <span class="name" aria-label="상품명">애플워치 액정보호 풀커버 투명케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">27% <strong>7,900</strong></span>
-                                        <span class="cost" aria-label="원가">10,900</span>
+                                        <span class="category">벤토사</span>
+                                        <span class="name">애플워치 액정보호 풀커버 투명케이스</span>
+                                        <span class="sel-price">27% <strong>7,900</strong></span>
+                                        <span class="cost">10,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label=" 좋아요수">18</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">18</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1232,17 +1230,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
-                                        <span class="num-mark"><span class="blind">순위</span>1</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
-                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">누렁이와 탱고 리무버블 스티커</span>
+                                        <span class="sel-price">50% <strong>2,500</strong></span>
+                                        <span class="cost">5,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1251,17 +1249,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
-                                        <span class="num-mark"><span class="blind">순위</span>2</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">4,000</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">토심이 토뭉이 엽서 Set</span>
+                                        <span class="sel-price">50% <strong>2,000</strong></span>
+                                        <span class="cost">4,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1270,17 +1268,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd03.png" alt="치즈 토이 카메라 (SD카드 증정)">
-                                        <span class="num-mark"><span class="blind">순위</span>3</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">카카오프렌즈</span>
-                                        <span class="name" aria-label="상품명">치즈 토이 카메라 (SD카드 증정)</span>
-                                        <span class="sel-price" aria-label="할인판매가">18% <strong>39,900</strong></span>
-                                        <span class="cost" aria-label="원가">49,000</span>
+                                        <span class="category">카카오프렌즈</span>
+                                        <span class="name">치즈 토이 카메라 (SD카드 증정)</span>
+                                        <span class="sel-price">18% <strong>39,900</strong></span>
+                                        <span class="cost">49,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">35</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">35</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1289,17 +1287,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd04.png" alt="필립스 무선 블루투스 헤드폰 TAH7508">
-                                        <span class="num-mark"><span class="blind">순위</span>4</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">필립스</span>
-                                        <span class="name" aria-label="상품명">필립스 무선 블루투스 헤드폰 TAH7508</span>
-                                        <span class="sel-price" aria-label="할인판매가">11% <strong>79,000</strong></span>
-                                        <span class="cost" aria-label="원가">89,000</span>
+                                        <span class="category">필립스</span>
+                                        <span class="name">필립스 무선 블루투스 헤드폰 TAH7508</span>
+                                        <span class="sel-price">11% <strong>79,000</strong></span>
+                                        <span class="cost">89,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">7</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">7</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1308,16 +1306,16 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd05.png" alt="샤오미 레드미워치3 액티브">
-                                        <span class="num-mark"><span class="blind">순위</span>5</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">샤오미</span>
-                                        <span class="name" aria-label="상품명">샤오미 레드미워치3 액티브</span>
-                                        <span class="cost normal" aria-label="판매가">44,800</span>
+                                        <span class="category">샤오미</span>
+                                        <span class="name">샤오미 레드미워치3 액티브</span>
+                                        <span class="cost normal">44,800</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">29</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">29</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1326,16 +1324,16 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd06.png" alt="샤오미 미니 진공청소기">
-                                        <span class="num-mark"><span class="blind">순위</span>6</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">샤오미</span>
-                                        <span class="name" aria-label="상품명">샤오미 미니 진공청소기</span>
-                                        <span class="cost normal" aria-label="판매가">54,800</span>
+                                        <span class="category">샤오미</span>
+                                        <span class="name">샤오미 미니 진공청소기</span>
+                                        <span class="cost normal">54,800</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">35</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">35</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1344,17 +1342,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd07.png" alt="디지털 LED 스마트 인바디 체중계">
-                                        <span class="num-mark"><span class="blind">순위</span>7</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">오아</span>
-                                        <span class="name" aria-label="상품명">디지털 LED 스마트 인바디 체중계</span>
-                                        <span class="sel-price" aria-label="할인판매가">8% <strong>31,000</strong></span>
-                                        <span class="cost" aria-label="원가">34,000</span>
+                                        <span class="category">오아</span>
+                                        <span class="name">디지털 LED 스마트 인바디 체중계</span>
+                                        <span class="sel-price">8% <strong>31,000</strong></span>
+                                        <span class="cost">34,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">20</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">20</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1363,17 +1361,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd08.png" alt="라떼 캠핑 미니버너 MINI-A">
-                                        <span class="num-mark"><span class="blind">순위</span>8</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">맥스</span>
-                                        <span class="name" aria-label="상품명">라떼 캠핑 미니버너 MINI-A</span>
-                                        <span class="sel-price" aria-label="할인판매가">23% <strong>45,900</strong></span>
-                                        <span class="cost" aria-label="원가">59,900</span>
+                                        <span class="category">맥스</span>
+                                        <span class="name">라떼 캠핑 미니버너 MINI-A</span>
+                                        <span class="sel-price">23% <strong>45,900</strong></span>
+                                        <span class="cost">59,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">30</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">30</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1382,17 +1380,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/life-pd09.png" alt="스마트태그2 위치 추적기 반려동물">
-                                        <span class="num-mark"><span class="blind">순위</span>9</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">스마트태그2 위치 추적기 반려동물</span>
-                                        <span class="sel-price" aria-label="할인판매가">25% <strong>27,000</strong></span>
-                                        <span class="cost" aria-label="원가">36,300</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">스마트태그2 위치 추적기 반려동물</span>
+                                        <span class="sel-price">25% <strong>27,000</strong></span>
+                                        <span class="cost">36,300</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">1</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">1</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1405,19 +1403,19 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd01.png" alt="스터디 플래너 에메랄드 / 월 시작">
-                                        <span class="num-mark"><span class="blind">순위</span>1</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span>
-                                    </span>
+                                        </span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">코난발네개</span>
-                                        <span class="name" aria-label="상품명">스터디 플래너 에메랄드 / 월 시작</span>
-                                        <span class="sel-price" aria-label="할인판매가">21% <strong>5,500</strong></span>
-                                        <span class="cost" aria-label="원가">7,000</span>
+                                        <span class="category">코난발네개</span>
+                                        <span class="name">스터디 플래너 에메랄드 / 월 시작</span>
+                                        <span class="sel-price">21% <strong>5,500</strong></span>
+                                        <span class="cost">7,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1426,18 +1424,18 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd02.png" alt="올인원 스터디 플래너 선셋 / 월 시작">
-                                        <span class="num-mark"><span class="blind">순위</span>2</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">코난발네개</span>
-                                        <span class="name" aria-label="상품명">올인원 스터디 플래너 선셋 / 월 시작</span>
-                                        <span class="sel-price" aria-label="할인판매가">21% <strong>5,500</strong></span>
-                                        <span class="cost" aria-label="원가">7,000</span>
+                                        <span class="category">코난발네개</span>
+                                        <span class="name">올인원 스터디 플래너 선셋 / 월 시작</span>
+                                        <span class="sel-price">21% <strong>5,500</strong></span>
+                                        <span class="cost">7,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1446,18 +1444,18 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd03.png" alt="푸딩 위클리 플래너">
-                                        <span class="num-mark"><span class="blind">순위</span>3</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">쿠키즈</span>
-                                        <span class="name" aria-label="상품명">푸딩 위클리 플래너</span>
-                                        <span class="sel-price" aria-label="할인판매가">16% <strong>2,500</strong></span>
-                                        <span class="cost" aria-label="원가">3,000</span>
+                                        <span class="category">쿠키즈</span>
+                                        <span class="name">푸딩 위클리 플래너</span>
+                                        <span class="sel-price">16% <strong>2,500</strong></span>
+                                        <span class="cost">3,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">1</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">1</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1466,18 +1464,18 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd04.png" alt="행운을 드려요 메모지 스티커">
-                                        <span class="num-mark"><span class="blind">순위</span>4</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">씨야</span>
-                                        <span class="name" aria-label="상품명">행운을 드려요 메모지 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">95% <strong>100</strong></span>
-                                        <span class="cost" aria-label="원가">2,000</span>
+                                        <span class="category">씨야</span>
+                                        <span class="name">행운을 드려요 메모지 스티커</span>
+                                        <span class="sel-price">95% <strong>100</strong></span>
+                                        <span class="cost">2,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">3</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">3</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1486,18 +1484,18 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd05.png" alt="한달살기 여행 플래너">
-                                        <span class="num-mark"><span class="blind">순위</span>5</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
-                                        <span class="name" aria-label="상품명">한달살기 여행 플래너</span>
-                                        <span class="sel-price" aria-label="할인판매가">34% <strong>8,200</strong></span>
-                                        <span class="cost" aria-label="원가">12,500</span>
+                                        <span class="category">다람이네잡화점</span>
+                                        <span class="name">한달살기 여행 플래너</span>
+                                        <span class="sel-price">34% <strong>8,200</strong></span>
+                                        <span class="cost">12,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1506,18 +1504,18 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd06.png" alt="먼슬리 아깽이 스티커">
-                                        <span class="num-mark"><span class="blind">순위</span>6</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">씨야</span>
-                                        <span class="name" aria-label="상품명">먼슬리 아깽이 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">21% <strong>1,800</strong></span>
-                                        <span class="cost" aria-label="원가">2,300</span>
+                                        <span class="category">씨야</span>
+                                        <span class="name">먼슬리 아깽이 스티커</span>
+                                        <span class="sel-price">21% <strong>1,800</strong></span>
+                                        <span class="cost">2,300</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1526,17 +1524,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd07.png" alt="스티치 알파벳_소문자(3set)">
-                                        <span class="num-mark"><span class="blind">순위</span>7</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">마이꾸꾸</span>
-                                        <span class="name" aria-label="상품명">스티치 알파벳_소문자(3set)</span>
-                                        <span class="cost normal" aria-label="판매가">2,000</span>
+                                        <span class="category">마이꾸꾸</span>
+                                        <span class="name">스티치 알파벳_소문자(3set)</span>
+                                        <span class="cost normal">2,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1545,17 +1543,17 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd08.png" alt="스티치 알파벳_대문자(3set)">
-                                        <span class="num-mark"><span class="blind">순위</span>8</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">마이꾸꾸</span>
-                                        <span class="name" aria-label="상품명">스티치 알파벳_대문자(3set)</span>
-                                        <span class="cost normal" aria-label="판매가">2,000</span>
+                                        <span class="category">마이꾸꾸</span>
+                                        <span class="name">스티치 알파벳_대문자(3set)</span>
+                                        <span class="cost normal">2,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1564,18 +1562,18 @@
                                 <a href="#" class="link-product">
                                     <span class="pd-thumb">
                                         <img src="./assets/images/digital-pd09.png" alt="말랑이2">
-                                        <span class="num-mark"><span class="blind">순위</span>9</span>
+                                        <span class="num-mark"><span class="blind">순위</span></span>
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">도란</span>
-                                        <span class="name" aria-label="상품명">말랑이2</span>
-                                        <span class="sel-price" aria-label="할인판매가">33% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">3,000</span>
+                                        <span class="category">도란</span>
+                                        <span class="name">말랑이2</span>
+                                        <span class="sel-price">33% <strong>2,000</strong></span>
+                                        <span class="cost">3,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1606,13 +1604,14 @@
                     </div>
                     <div class="tab-bar">
                         <ul class="tab-list" role="tablist">
-                            <li class="tab-menu mobile active" data-tab=".sale-mobile" data-btn=".btn-mobile" role="tab" aria-pressed="true">
+                            <li class="tab-menu mobile active" data-tab=".sale-mobile" data-btn=".btn-mobile"
+                                role="tab">
                                 <span>Mobile</span>
                             </li>
-                            <li class="tab-menu life " data-tab=".sale-life" data-btn=".btn-life" role="tab" aria-pressed="false">
+                            <li class="tab-menu life " data-tab=".sale-life" data-btn=".btn-life" role="tab">
                                 <span>Life</span>
                             </li>
-                            <li class="tab-menu digital" data-tab=".sale-digital" data-btn=".btn-digital" role="tab" aria-pressed="false">
+                            <li class="tab-menu digital" data-tab=".sale-digital" data-btn=".btn-digital" role="tab">
                                 <span>Digital</span>
                             </li>
                         </ul>
@@ -1656,14 +1655,14 @@
                                         <img src="./assets/images/mobile-pd01.png" alt="곽철이 아크릴 스마트톡">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">곽철이 아크릴 스마트톡</span>
-                                        <span class="sel-price" aria-label="할인판매가">29% <strong>9,500</strong></span>
-                                        <span class="cost" aria-label="원가">13,500</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">곽철이 아크릴 스마트톡</span>
+                                        <span class="sel-price">29% <strong>9,500</strong></span>
+                                        <span class="cost">13,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1672,14 +1671,14 @@
                                         <img src="./assets/images/mobile-pd10.png" alt="2IN1보조배터리5000mAh 8핀(C케이블)">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">필로</span>
-                                        <span class="name" aria-label="상품명">2IN1보조배터리5000mAh 8핀(C케이블)</span>
-                                        <span class="sel-price" aria-label="할인판매가">46% <strong>11,900</strong></span>
-                                        <span class="cost" aria-label="원가">22,400</span>
+                                        <span class="category">필로</span>
+                                        <span class="name">2IN1보조배터리5000mAh 8핀(C케이블)</span>
+                                        <span class="sel-price">46% <strong>11,900</strong></span>
+                                        <span class="cost">22,400</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">6</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">6</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1688,14 +1687,14 @@
                                         <img src="./assets/images/mobile-pd11.png" alt="필로PD20w2구고속충전기 케이블미포함">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">필로</span>
-                                        <span class="name" aria-label="상품명">필로PD20w2구고속충전기 케이블미포함</span>
-                                        <span class="sel-price" aria-label="할인판매가">30% <strong>11,900</strong></span>
-                                        <span class="cost" aria-label="원가">17,200</span>
+                                        <span class="category">필로</span>
+                                        <span class="name">필로PD20w2구고속충전기 케이블미포함</span>
+                                        <span class="sel-price">30% <strong>11,900</strong></span>
+                                        <span class="cost">17,200</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">7</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">7</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1704,14 +1703,14 @@
                                         <img src="./assets/images/mobile-pd12.png" alt="무선 충전 호환 스마트링 거치대">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">벤토사</span>
-                                        <span class="name" aria-label="상품명">무선 충전 호환 스마트링 거치대</span>
-                                        <span class="sel-price" aria-label="할인판매가">40% <strong>5,900</strong></span>
-                                        <span class="cost" aria-label="원가">9,900</span>
+                                        <span class="category">벤토사</span>
+                                        <span class="name">무선 충전 호환 스마트링 거치대</span>
+                                        <span class="sel-price">40% <strong>5,900</strong></span>
+                                        <span class="cost">9,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1720,14 +1719,14 @@
                                         <img src="./assets/images/mobile-pd13.png" alt="(아크릴 플라톡) 말티잔">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">168CM케이스</span>
-                                        <span class="name" aria-label="상품명">(아크릴 플라톡) 말티잔</span>
-                                        <span class="sel-price" aria-label="할인판매가">45% <strong>9,800</strong></span>
-                                        <span class="cost" aria-label="원가">18,000</span>
+                                        <span class="category">168CM케이스</span>
+                                        <span class="name">(아크릴 플라톡) 말티잔</span>
+                                        <span class="sel-price">45% <strong>9,800</strong></span>
+                                        <span class="cost">18,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1736,14 +1735,14 @@
                                         <img src="./assets/images/mobile-pd14.png" alt="애플워치 밀레니즈루프 스트랩 ML">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">힐링쉴드</span>
-                                        <span class="name" aria-label="상품명">애플워치 밀레니즈루프 스트랩 ML</span>
-                                        <span class="sel-price" aria-label="할인판매가">12% <strong>9,900</strong></span>
-                                        <span class="cost" aria-label="원가">11,300</span>
+                                        <span class="category">힐링쉴드</span>
+                                        <span class="name">애플워치 밀레니즈루프 스트랩 ML</span>
+                                        <span class="sel-price">12% <strong>9,900</strong></span>
+                                        <span class="cost">11,300</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">5</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">5</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1752,14 +1751,14 @@
                                         <img src="./assets/images/mobile-pd15.png" alt="iPhone 14 Plus 실리콘 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">Apple</span>
-                                        <span class="name" aria-label="상품명">iPhone 14 Plus 실리콘 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">87% <strong>8,900</strong></span>
-                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="category">Apple</span>
+                                        <span class="name">iPhone 14 Plus 실리콘 케이스</span>
+                                        <span class="sel-price">87% <strong>8,900</strong></span>
+                                        <span class="cost">69,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
-                                            <span class="like" aria-label="좋아요수">15</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(1)</span></span>
+                                            <span class="like">15</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1768,21 +1767,19 @@
                                         <img src="./assets/images/mobile-pd16.png" alt="iPhone 15 Plus 투명 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">Apple</span>
-                                        <span class="name" aria-label="상품명">iPhone 15 Plus 투명 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">62% <strong>25,900</strong></span>
-                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="category">Apple</span>
+                                        <span class="name">iPhone 15 Plus 투명 케이스</span>
+                                        <span class="sel-price">62% <strong>25,900</strong></span>
+                                        <span class="cost">69,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">11</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">11</span>
                                         </span>
                                     </span>
                                 </a>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="tab-view sale-life">
                         <div class="swiper">
@@ -1792,14 +1789,14 @@
                                         <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
-                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">누렁이와 탱고 리무버블 스티커</span>
+                                        <span class="sel-price">50% <strong>2,500</strong></span>
+                                        <span class="cost">5,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1808,14 +1805,14 @@
                                         <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">4,000</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">토심이 토뭉이 엽서 Set</span>
+                                        <span class="sel-price">50% <strong>2,000</strong></span>
+                                        <span class="cost">4,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1824,14 +1821,14 @@
                                         <img src="./assets/images/life-pd10.png" alt="키니 스트라이프 크롭탑">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">키니키니</span>
-                                        <span class="name" aria-label="상품명">키니 스트라이프 크롭탑</span>
-                                        <span class="sel-price" aria-label="할인판매가">10% <strong>22,500</strong></span>
-                                        <span class="cost" aria-label="원가">25,000</span>
+                                        <span class="category">키니키니</span>
+                                        <span class="name">키니 스트라이프 크롭탑</span>
+                                        <span class="sel-price">10% <strong>22,500</strong></span>
+                                        <span class="cost">25,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">3</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">3</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1840,14 +1837,14 @@
                                         <img src="./assets/images/life-pd11.png" alt="키니 트레이닝 집업">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">키니키니</span>
-                                        <span class="name" aria-label="상품명">키니 트레이닝 집업</span>
-                                        <span class="sel-price" aria-label="할인판매가">10% <strong>38,700</strong></span>
-                                        <span class="cost" aria-label="원가">43,000</span>
+                                        <span class="category">키니키니</span>
+                                        <span class="name">키니 트레이닝 집업</span>
+                                        <span class="sel-price">10% <strong>38,700</strong></span>
+                                        <span class="cost">43,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">4</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">4</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1856,14 +1853,14 @@
                                         <img src="./assets/images/life-pd12.png" alt="선인장 고양이 스크래쳐 TR700">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">헬로망치</span>
-                                        <span class="name" aria-label="상품명">선인장 고양이 스크래쳐 TR700</span>
-                                        <span class="sel-price" aria-label="할인판매가">41% <strong>28,000</strong></span>
-                                        <span class="cost" aria-label="원가">48,000</span>
+                                        <span class="category">헬로망치</span>
+                                        <span class="name">선인장 고양이 스크래쳐 TR700</span>
+                                        <span class="sel-price">41% <strong>28,000</strong></span>
+                                        <span class="cost">48,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
-                                            <span class="like" aria-label="좋아요수">4</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(1)</span></span>
+                                            <span class="like">4</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1872,14 +1869,14 @@
                                         <img src="./assets/images/life-pd13.png" alt="제트 펫 강아지 고양이 드라이기">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">헬로망치</span>
-                                        <span class="name" aria-label="상품명">제트 펫 강아지 고양이 드라이기</span>
-                                        <span class="sel-price" aria-label="할인판매가">40% <strong>29,000</strong></span>
-                                        <span class="cost" aria-label="원가">49,000</span>
+                                        <span class="category">헬로망치</span>
+                                        <span class="name">제트 펫 강아지 고양이 드라이기</span>
+                                        <span class="sel-price">40% <strong>29,000</strong></span>
+                                        <span class="cost">49,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">7</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">7</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1888,14 +1885,14 @@
                                         <img src="./assets/images/life-pd14.png" alt="이리와 펫 대용량 자동급식기">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">오아</span>
-                                        <span class="name" aria-label="상품명">이리와 펫 대용량 자동급식기</span>
-                                        <span class="sel-price" aria-label="할인판매가">4% <strong>75,000</strong></span>
-                                        <span class="cost" aria-label="원가">78,500</span>
+                                        <span class="category">오아</span>
+                                        <span class="name">이리와 펫 대용량 자동급식기</span>
+                                        <span class="sel-price">4% <strong>75,000</strong></span>
+                                        <span class="cost">78,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">1</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">1</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1904,14 +1901,14 @@
                                         <img src="./assets/images/life-pd15.png" alt="[PS4] 더 라스트 오브 어스 Hits">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">플레이스테이션</span>
-                                        <span class="name" aria-label="상품명">[PS4] 더 라스트 오브 어스 Hits</span>
-                                        <span class="sel-price" aria-label="할인판매가">13% <strong>19,800</strong></span>
-                                        <span class="cost" aria-label="원가">22,800</span>
+                                        <span class="category">플레이스테이션</span>
+                                        <span class="name">[PS4] 더 라스트 오브 어스 Hits</span>
+                                        <span class="sel-price">13% <strong>19,800</strong></span>
+                                        <span class="cost">22,800</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1927,14 +1924,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">세세</span>
-                                        <span class="name" aria-label="상품명">스터디 플래너 4컬러 set_세로형</span>
-                                        <span class="sel-price" aria-label="할인판매가">46% <strong>800</strong></span>
-                                        <span class="cost" aria-label="원가">1,500</span>
+                                        <span class="category">세세</span>
+                                        <span class="name">스터디 플래너 4컬러 set_세로형</span>
+                                        <span class="sel-price">46% <strong>800</strong></span>
+                                        <span class="cost">1,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">3</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">3</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1944,14 +1941,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">세세</span>
-                                        <span class="name" aria-label="상품명">데일리 플래너 4컬러 set_세로형</span>
-                                        <span class="sel-price" aria-label="할인판매가">46% <strong>800</strong></span>
-                                        <span class="cost" aria-label="원가">1,500</span>
+                                        <span class="category">세세</span>
+                                        <span class="name">데일리 플래너 4컬러 set_세로형</span>
+                                        <span class="sel-price">46% <strong>800</strong></span>
+                                        <span class="cost">1,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">6</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">6</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1961,14 +1958,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
-                                        <span class="name" aria-label="상품명">화이트&블랙 위클리 플래너+스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">42% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">3,500</span>
+                                        <span class="category">다람이네잡화점</span>
+                                        <span class="name">화이트&블랙 위클리 플래너+스티커</span>
+                                        <span class="sel-price">42% <strong>2,000</strong></span>
+                                        <span class="cost">3,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">4</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">4</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1978,14 +1975,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">조아즈</span>
-                                        <span class="name" aria-label="상품명">Monthly Record 만년형 먼슬리플래너</span>
-                                        <span class="sel-price" aria-label="할인판매가">70% <strong>1,500</strong></span>
-                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="category">조아즈</span>
+                                        <span class="name">Monthly Record 만년형 먼슬리플래너</span>
+                                        <span class="sel-price">70% <strong>1,500</strong></span>
+                                        <span class="cost">5,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -1995,14 +1992,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
-                                        <span class="name" aria-label="상품명">먼슬리 플래너+노트(8색)+스티커 set</span>
-                                        <span class="sel-price" aria-label="할인판매가">43% <strong>4,500</strong></span>
-                                        <span class="cost" aria-label="원가">8,000</span>
+                                        <span class="category">다람이네잡화점</span>
+                                        <span class="name">먼슬리 플래너+노트(8색)+스티커 set</span>
+                                        <span class="sel-price">43% <strong>4,500</strong></span>
+                                        <span class="cost">8,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">11</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">11</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2012,14 +2009,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
-                                        <span class="name" aria-label="상품명">한달살기 여행 플래너</span>
-                                        <span class="sel-price" aria-label="할인판매가">34% <strong>8,200</strong></span>
-                                        <span class="cost" aria-label="원가">12,500</span>
+                                        <span class="category">다람이네잡화점</span>
+                                        <span class="name">한달살기 여행 플래너</span>
+                                        <span class="sel-price">34% <strong>8,200</strong></span>
+                                        <span class="cost">12,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2029,14 +2026,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">두둠치치</span>
-                                        <span class="name" aria-label="상품명">파스텔 데일리 플래너</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>1,500</strong></span>
-                                        <span class="cost" aria-label="원가">3,000</span>
+                                        <span class="category">두둠치치</span>
+                                        <span class="name">파스텔 데일리 플래너</span>
+                                        <span class="sel-price">50% <strong>1,500</strong></span>
+                                        <span class="cost">3,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2046,14 +2043,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">옐로우든</span>
-                                        <span class="name" aria-label="상품명">클래식 블루 포토앨범 2종+스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">51% <strong>2,900</strong></span>
-                                        <span class="cost" aria-label="원가">6,000</span>
+                                        <span class="category">옐로우든</span>
+                                        <span class="name">클래식 블루 포토앨범 2종+스티커</span>
+                                        <span class="sel-price">51% <strong>2,900</strong></span>
+                                        <span class="cost">6,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2077,14 +2074,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">티다문구점</span>
-                                    <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
-                                    <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
-                                    <span class="cost" aria-label="원가">4,000</span>
+                                    <span class="category">티다문구점</span>
+                                    <span class="name">토심이 토뭉이 엽서 Set</span>
+                                    <span class="sel-price">50% <strong>2,000</strong></span>
+                                    <span class="cost">4,000</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">0</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">0</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2092,14 +2089,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">티다문구점</span>
-                                    <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
-                                    <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
-                                    <span class="cost" aria-label="원가">5,000</span>
+                                    <span class="category">티다문구점</span>
+                                    <span class="name">누렁이와 탱고 리무버블 스티커</span>
+                                    <span class="sel-price">50% <strong>2,500</strong></span>
+                                    <span class="cost">5,000</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">0</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">0</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2107,14 +2104,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/new-pd01.png" alt="방한 넥워머 목토시 멀티스카프 기모">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">네파세이프티</span>
-                                    <span class="name" aria-label="상품명">방한 넥워머 목토시 멀티스카프 기모</span>
-                                    <span class="sel-price" aria-label="할인판매가">24% <strong>21,900</strong></span>
-                                    <span class="cost" aria-label="원가">29,000</span>
+                                    <span class="category">네파세이프티</span>
+                                    <span class="name">방한 넥워머 목토시 멀티스카프 기모</span>
+                                    <span class="sel-price">24% <strong>21,900</strong></span>
+                                    <span class="cost">29,000</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">0</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">0</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2122,14 +2119,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/new-pd02.png" alt="네파세이프티 방한귀마개귀덮개귀도리">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">네파세이프티</span>
-                                    <span class="name" aria-label="상품명">네파세이프티 방한귀마개귀덮개귀도리</span>
-                                    <span class="sel-price" aria-label="할인판매가">30% <strong>12,900</strong></span>
-                                    <span class="cost" aria-label="원가">18,600</span>
+                                    <span class="category">네파세이프티</span>
+                                    <span class="name">네파세이프티 방한귀마개귀덮개귀도리</span>
+                                    <span class="sel-price">30% <strong>12,900</strong></span>
+                                    <span class="cost">18,600</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">0</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">0</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2137,14 +2134,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/new-pd03.png" alt="옵타움퍼퓸미니핸드크림4종세트10ml*4">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">옵타움</span>
-                                    <span class="name" aria-label="상품명">옵타움퍼퓸미니핸드크림4종세트10ml*4</span>
-                                    <span class="sel-price" aria-label="할인판매가">30% <strong>15,900</strong></span>
-                                    <span class="cost" aria-label="원가">23,000</span>
+                                    <span class="category">옵타움</span>
+                                    <span class="name">옵타움퍼퓸미니핸드크림4종세트10ml*4</span>
+                                    <span class="sel-price">30% <strong>15,900</strong></span>
+                                    <span class="cost">23,000</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">0</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">0</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2152,14 +2149,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/new-pd04.png" alt="캠핑 혼술 소주 자동 LED 디스펜서">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">벤토사</span>
-                                    <span class="name" aria-label="상품명">캠핑 혼술 소주 자동 LED 디스펜서</span>
-                                    <span class="sel-price" aria-label="할인판매가">25% <strong>25,900</strong></span>
-                                    <span class="cost" aria-label="원가">34,900</span>
+                                    <span class="category">벤토사</span>
+                                    <span class="name">캠핑 혼술 소주 자동 LED 디스펜서</span>
+                                    <span class="sel-price">25% <strong>25,900</strong></span>
+                                    <span class="cost">34,900</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">0</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">0</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2167,14 +2164,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/new-pd05.png" alt="M3 멀티플 LED랜턴">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">루메나</span>
-                                    <span class="name" aria-label="상품명">M3 멀티플 LED랜턴</span>
-                                    <span class="sel-price" aria-label="할인판매가">17% <strong>56,900</strong></span>
-                                    <span class="cost" aria-label="원가">69,000</span>
+                                    <span class="category">루메나</span>
+                                    <span class="name">M3 멀티플 LED랜턴</span>
+                                    <span class="sel-price">17% <strong>56,900</strong></span>
+                                    <span class="cost">69,000</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">1</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">1</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2182,14 +2179,14 @@
                             <div class="swiper-slide">
                                 <img src="./assets/images/new-pd06.png" alt="너무편한스핀워시물걸레청소기&세척통">
                                 <a href="#" class="link-product">
-                                    <span class="category" aria-label="판매처">에코너</span>
-                                    <span class="name" aria-label="상품명">너무편한스핀워시물걸레청소기&세척통</span>
-                                    <span class="sel-price" aria-label="할인판매가">35% <strong>39,800</strong></span>
-                                    <span class="cost" aria-label="원가">61,500</span>
+                                    <span class="category">에코너</span>
+                                    <span class="name">너무편한스핀워시물걸레청소기&세척통</span>
+                                    <span class="sel-price">35% <strong>39,800</strong></span>
+                                    <span class="cost">61,500</span>
                                     <span class="review-like">
-                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                        <span class="like" aria-label="좋아요수">1</span>
+                                        <span class="review"><span class="grade">0</span><span
+                                                class="grade-num">(0)</span></span>
+                                        <span class="like">1</span>
                                     </span>
                                     <span class="new-mark">재입고</span>
                                 </a>
@@ -2210,25 +2207,35 @@
                     </div>
                     <div class="tab-bar">
                         <ul class="tab-list">
-                            <li class="tab-menu mobile active" data-tab=".md-mobile" data-btn=".btn-mobile"><span>Mobile</span></li>
+                            <li class="tab-menu mobile active" data-tab=".md-mobile" data-btn=".btn-mobile">
+                                <span>Mobile</span>
+                            </li>
                             <li class="tab-menu life " data-tab=".md-life" data-btn=".btn-life"><span>Life</span></li>
-                            <li class="tab-menu digital" data-tab=".md-digital" data-btn=".btn-digital"><span>Digital</span></li>
+                            <li class="tab-menu digital" data-tab=".md-digital" data-btn=".btn-digital">
+                                <span>Digital</span>
+                            </li>
                         </ul>
                         <div class="swiper-btn">
                             <!-- mobile btn -->
                             <div class="btn-item btn-mobile on">
-                                <button class="mobile-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i></button>
-                                <button class="mobile-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span class="blind">다음슬라이드</span></i></button>
+                                <button class="mobile-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span
+                                            class="blind">이전슬라이드</span></i></button>
+                                <button class="mobile-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span
+                                            class="blind">다음슬라이드</span></i></button>
                             </div>
                             <!-- life btn -->
                             <div class="btn-item btn-life">
-                                <button class="life-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i></button>
-                                <button class="life-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span class="blind">다음슬라이드</span></i></button>
+                                <button class="life-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span
+                                            class="blind">이전슬라이드</span></i></button>
+                                <button class="life-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span
+                                            class="blind">다음슬라이드</span></i></button>
                             </div>
                             <!-- digital btn -->
                             <div class="btn-item btn-digital">
-                                <button class="digital-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i></button>
-                                <button class="digital-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span class="blind">다음슬라이드</span></i></button>
+                                <button class="digital-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span
+                                            class="blind">이전슬라이드</span></i></button>
+                                <button class="digital-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span
+                                            class="blind">다음슬라이드</span></i></button>
                             </div>
                         </div>
                     </div>
@@ -2242,14 +2249,14 @@
                                         <img src="./assets/images/mobile-pd01.png" alt="곽철이 아크릴 스마트톡">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">곽철이 아크릴 스마트톡</span>
-                                        <span class="sel-price" aria-label="할인판매가">29% <strong>9,500</strong></span>
-                                        <span class="cost" aria-label="원가">13,500</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">곽철이 아크릴 스마트톡</span>
+                                        <span class="sel-price">29% <strong>9,500</strong></span>
+                                        <span class="cost">13,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                         <span class="new-mark">재입고</span>
                                     </span>
@@ -2259,14 +2266,14 @@
                                         <img src="./assets/images/mobile-pd15.png" alt="iPhone 14 Plus 실리콘 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">Apple</span>
-                                        <span class="name" aria-label="상품명">iPhone 14 Plus 실리콘 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">87% <strong>8,900</strong></span>
-                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="category">Apple</span>
+                                        <span class="name">iPhone 14 Plus 실리콘 케이스</span>
+                                        <span class="sel-price">87% <strong>8,900</strong></span>
+                                        <span class="cost">69,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
-                                            <span class="like" aria-label="좋아요수">15</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(1)</span></span>
+                                            <span class="like">15</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2275,14 +2282,14 @@
                                         <img src="./assets/images/mobile-pd16.png" alt="iPhone 15 Plus 투명 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">Apple</span>
-                                        <span class="name" aria-label="상품명">iPhone 15 Plus 투명 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">62% <strong>25,900</strong></span>
-                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="category">Apple</span>
+                                        <span class="name">iPhone 15 Plus 투명 케이스</span>
+                                        <span class="sel-price">62% <strong>25,900</strong></span>
+                                        <span class="cost">69,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">11</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">11</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2291,14 +2298,14 @@
                                         <img src="./assets/images/mobile-pd17.png" alt="iPhone 15 파인우븐 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">Apple</span>
-                                        <span class="name" aria-label="상품명">iPhone 15 파인우븐 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">64% <strong>29,900</strong></span>
-                                        <span class="cost" aria-label="원가">85,000</span>
+                                        <span class="category">Apple</span>
+                                        <span class="name">iPhone 15 파인우븐 케이스</span>
+                                        <span class="sel-price">64% <strong>29,900</strong></span>
+                                        <span class="cost">85,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">11</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">11</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2307,14 +2314,14 @@
                                         <img src="./assets/images/mobile-pd18.png" alt="갤럭시S24 FE 스탠딩 그립 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">갤럭시S24 FE 스탠딩 그립 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">18% <strong>44,800</strong></span>
-                                        <span class="cost" aria-label="원가">55,000</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">갤럭시S24 FE 스탠딩 그립 케이스</span>
+                                        <span class="sel-price">18% <strong>44,800</strong></span>
+                                        <span class="cost">55,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">1</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">1</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2323,14 +2330,14 @@
                                         <img src="./assets/images/mobile-pd19.png" alt="갤럭시S24 FE 스마트 뷰 월렛 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">갤럭시S24 FE 스마트 뷰 월렛 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">18% <strong>40,400</strong></span>
-                                        <span class="cost" aria-label="원가">49,500</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">갤럭시S24 FE 스마트 뷰 월렛 케이스</span>
+                                        <span class="sel-price">18% <strong>40,400</strong></span>
+                                        <span class="cost">49,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2339,14 +2346,14 @@
                                         <img src="./assets/images/mobile-pd20.png" alt="갤럭시S24 FE 플립수트 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">갤럭시S24 FE 플립수트 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">18% <strong>40,400</strong></span>
-                                        <span class="cost" aria-label="원가">49,500</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">갤럭시S24 FE 플립수트 케이스</span>
+                                        <span class="sel-price">18% <strong>40,400</strong></span>
+                                        <span class="cost">49,500</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2355,14 +2362,14 @@
                                         <img src="./assets/images/mobile-pd21.png" alt="갤럭시S24 FE 실리콘 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">삼성전자</span>
-                                        <span class="name" aria-label="상품명">갤럭시S24 FE 실리콘 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">13% <strong>28,600</strong></span>
-                                        <span class="cost" aria-label="원가">33,000</span>
+                                        <span class="category">삼성전자</span>
+                                        <span class="name">갤럭시S24 FE 실리콘 케이스</span>
+                                        <span class="sel-price">13% <strong>28,600</strong></span>
+                                        <span class="cost">33,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2371,14 +2378,14 @@
                                         <img src="./assets/images/mobile-pd22.png" alt="[아이폰16전용] T1 클리어 케이스">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">페스티버</span>
-                                        <span class="name" aria-label="상품명">[아이폰16전용] T1 클리어 케이스</span>
-                                        <span class="sel-price" aria-label="할인판매가">30% <strong>17,400</strong></span>
-                                        <span class="cost" aria-label="원가">24,900</span>
+                                        <span class="category">페스티버</span>
+                                        <span class="name">[아이폰16전용] T1 클리어 케이스</span>
+                                        <span class="sel-price">30% <strong>17,400</strong></span>
+                                        <span class="cost">24,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">5</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">5</span>
                                         </span>
                                         <span class="new-mark">T1</span>
                                     </span>
@@ -2394,16 +2401,16 @@
                                         <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
-                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">누렁이와 탱고 리무버블 스티커</span>
+                                        <span class="sel-price">50% <strong>2,500</strong></span>
+                                        <span class="cost">5,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
-                                        <div class="new-mark">재입고</div>
+                                        <span class="new-mark">재입고</span>
                                     </span>
                                 </a>
                                 <a href="#" class="swiper-slide link-product">
@@ -2411,16 +2418,16 @@
                                         <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">4,000</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">토심이 토뭉이 엽서 Set</span>
+                                        <span class="sel-price">50% <strong>2,000</strong></span>
+                                        <span class="cost">4,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">0</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">0</span>
                                         </span>
-                                        <div class="new-mark">재입고</div>
+                                        <span class="new-mark">재입고</span>
                                     </span>
                                 </a>
                                 <a href="#" class="swiper-slide link-product">
@@ -2428,14 +2435,14 @@
                                         <img src="./assets/images/life-pd16.png" alt="KOA 산토리니 비치쉘터플러스 (3~4인용)">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">코아</span>
-                                        <span class="name" aria-label="상품명">KOA 산토리니 비치쉘터플러스 (3~4인용)</span>
-                                        <span class="sel-price" aria-label="할인판매가">19% <strong>159,000</strong></span>
-                                        <span class="cost" aria-label="원가">198,000</span>
+                                        <span class="category">코아</span>
+                                        <span class="name">KOA 산토리니 비치쉘터플러스 (3~4인용)</span>
+                                        <span class="sel-price">19% <strong>159,000</strong></span>
+                                        <span class="cost">198,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">4</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">4</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2444,14 +2451,14 @@
                                         <img src="./assets/images/life-pd17.png" alt="테지움 테디베어 캐리온 롤테이블92cm">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">테지움</span>
-                                        <span class="name" aria-label="상품명">테지움 테디베어 캐리온 롤테이블92cm</span>
-                                        <span class="sel-price" aria-label="할인판매가">27% <strong>92,900</strong></span>
-                                        <span class="cost" aria-label="원가">129,000</span>
+                                        <span class="category">테지움</span>
+                                        <span class="name">테지움 테디베어 캐리온 롤테이블92cm</span>
+                                        <span class="sel-price">27% <strong>92,900</strong></span>
+                                        <span class="cost">129,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">3</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">3</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2460,14 +2467,14 @@
                                         <img src="./assets/images/life-pd18.png" alt="테지움 테디베어 이즐리 허그체어 1P">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">테지움</span>
-                                        <span class="name" aria-label="상품명">테지움 테디베어 이즐리 허그체어 1P</span>
-                                        <span class="sel-price" aria-label="할인판매가">22% <strong>45,900</strong></span>
-                                        <span class="cost" aria-label="원가">59,000</span>
+                                        <span class="category">테지움</span>
+                                        <span class="name">테지움 테디베어 이즐리 허그체어 1P</span>
+                                        <span class="sel-price">22% <strong>45,900</strong></span>
+                                        <span class="cost">59,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">10</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">10</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2476,14 +2483,14 @@
                                         <img src="./assets/images/life-pd19.png" alt="에코너-LA09 LEDN 캠핑램프(2색상)">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">에코너</span>
-                                        <span class="name" aria-label="상품명">에코너-LA09 LEDN 캠핑램프(2색상)</span>
-                                        <span class="sel-price" aria-label="할인판매가">3% <strong>30,000</strong></span>
-                                        <span class="cost" aria-label="원가">31,000</span>
+                                        <span class="category">에코너</span>
+                                        <span class="name">에코너-LA09 LEDN 캠핑램프(2색상)</span>
+                                        <span class="sel-price">3% <strong>30,000</strong></span>
+                                        <span class="cost">31,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">18</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">18</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2492,14 +2499,14 @@
                                         <img src="./assets/images/life-pd20.png" alt="클리프타운 휴대용 접이식 받침대">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">클리프타운</span>
-                                        <span class="name" aria-label="상품명">클리프타운 휴대용 접이식 받침대</span>
-                                        <span class="sel-price" aria-label="할인판매가">40% <strong>30,000</strong></span>
-                                        <span class="cost" aria-label="원가">50,000</span>
+                                        <span class="category">클리프타운</span>
+                                        <span class="name">클리프타운 휴대용 접이식 받침대</span>
+                                        <span class="sel-price">40% <strong>30,000</strong></span>
+                                        <span class="cost">50,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
-                                            <span class="like" aria-label="좋아요수">7</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(1)</span></span>
+                                            <span class="like">7</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2508,14 +2515,14 @@
                                         <img src="./assets/images/life-pd08.png" alt="라떼 캠핑 미니버너 MINI-A">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">맥스</span>
-                                        <span class="name" aria-label="상품명">라떼 캠핑 미니버너 MINI-A</span>
-                                        <span class="sel-price" aria-label="할인판매가">23% <strong>45,900</strong></span>
-                                        <span class="cost" aria-label="원가">59,900</span>
+                                        <span class="category">맥스</span>
+                                        <span class="name">라떼 캠핑 미니버너 MINI-A</span>
+                                        <span class="sel-price">23% <strong>45,900</strong></span>
+                                        <span class="cost">59,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">30</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">30</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2524,14 +2531,14 @@
                                         <img src="./assets/images/life-pd21.png" alt="ST-ML100 멀티LED등 램프">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">슈틸루스터</span>
-                                        <span class="name" aria-label="상품명">ST-ML100 멀티LED등 램프</span>
-                                        <span class="sel-price" aria-label="할인판매가">26% <strong>14,000</strong></span>
-                                        <span class="cost" aria-label="원가">19,000</span>
+                                        <span class="category">슈틸루스터</span>
+                                        <span class="name">ST-ML100 멀티LED등 램프</span>
+                                        <span class="sel-price">26% <strong>14,000</strong></span>
+                                        <span class="cost">19,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">9</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">9</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2540,14 +2547,14 @@
                                         <img src="./assets/images/life-pd22.png" alt="GEEK캠핑난로 부탄 가스난로SGG-T3103">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">GEEK</span>
-                                        <span class="name" aria-label="상품명">GEEK캠핑난로 부탄 가스난로SGG-T3103</span>
-                                        <span class="sel-price" aria-label="할인판매가">25% <strong>148,000</strong></span>
-                                        <span class="cost" aria-label="원가">199,900</span>
+                                        <span class="category">GEEK</span>
+                                        <span class="name">GEEK캠핑난로 부탄 가스난로SGG-T3103</span>
+                                        <span class="sel-price">25% <strong>148,000</strong></span>
+                                        <span class="cost">199,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">1</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">1</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2556,14 +2563,14 @@
                                         <img src="./assets/images/life-pd23.png" alt="테지움 테디베어 피크닉 캠핑매트">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">테지움</span>
-                                        <span class="name" aria-label="상품명">테지움 테디베어 피크닉 캠핑매트</span>
-                                        <span class="sel-price" aria-label="할인판매가">32% <strong>39,900</strong></span>
-                                        <span class="cost" aria-label="원가">59,000</span>
+                                        <span class="category">테지움</span>
+                                        <span class="name">테지움 테디베어 피크닉 캠핑매트</span>
+                                        <span class="sel-price">32% <strong>39,900</strong></span>
+                                        <span class="cost">59,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">6</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">6</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2572,14 +2579,14 @@
                                         <img src="./assets/images/life-pd24.png" alt="휴대용 초경량 접이식 폴딩 간이 의자">
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">벤토사</span>
-                                        <span class="name" aria-label="상품명">휴대용 초경량 접이식 폴딩 간이 의자</span>
-                                        <span class="sel-price" aria-label="할인판매가">6% <strong>14,900</strong></span>
-                                        <span class="cost" aria-label="원가">15,900</span>
+                                        <span class="category">벤토사</span>
+                                        <span class="name">휴대용 초경량 접이식 폴딩 간이 의자</span>
+                                        <span class="sel-price">6% <strong>14,900</strong></span>
+                                        <span class="cost">15,900</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2595,13 +2602,13 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">티다문구점</span>
-                                        <span class="name" aria-label="상품명">플립6 플라워 배경화면 3종</span>
-                                        <span class="cost normal" aria-label="판매가">0</span>
+                                        <span class="category">티다문구점</span>
+                                        <span class="name">플립6 플라워 배경화면 3종</span>
+                                        <span class="cost normal">0</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
-                                                    class="grade-num" aria-label="리뷰수">(5)</span></span>
-                                            <span class="like" aria-label="좋아요수">6</span>
+                                            <span class="review"><span class="grade">5</span><span
+                                                    class="grade-num">(5)</span></span>
+                                            <span class="like">6</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2611,14 +2618,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">홍스튜디오</span>
-                                        <span class="name" aria-label="상품명">유화 그림 배경화면 5종</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>1,000</strong></span>
-                                        <span class="cost" aria-label="원가">2,000</span>
+                                        <span class="category">홍스튜디오</span>
+                                        <span class="name">유화 그림 배경화면 5종</span>
+                                        <span class="sel-price">50% <strong>1,000</strong></span>
+                                        <span class="cost">2,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2628,13 +2635,13 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">딱지스튜디오</span>
-                                        <span class="name" aria-label="상품명">[AOS] Meow</span>
-                                        <span class="cost normal" aria-label="판매가">1,000</span>
+                                        <span class="category">딱지스튜디오</span>
+                                        <span class="name">[AOS] Meow</span>
+                                        <span class="cost normal">1,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">6</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">6</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2644,14 +2651,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">쿠키즈</span>
-                                        <span class="name" aria-label="상품명">[iOS] 나루토마끼 카카오톡 테마</span>
-                                        <span class="sel-price" aria-label="할인판매가">50% <strong>1,000</strong></span>
-                                        <span class="cost" aria-label="원가">2,000</span>
+                                        <span class="category">쿠키즈</span>
+                                        <span class="name">[iOS] 나루토마끼 카카오톡 테마</span>
+                                        <span class="sel-price">50% <strong>1,000</strong></span>
+                                        <span class="cost">2,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">3</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">3</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2661,13 +2668,13 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">딱지스튜디오</span>
-                                        <span class="name" aria-label="상품명">[AOS] Ma-AH</span>
-                                        <span class="cost normal" aria-label="판매가">1,000</span>
+                                        <span class="category">딱지스튜디오</span>
+                                        <span class="name">[AOS] Ma-AH</span>
+                                        <span class="cost normal">1,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">6</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">6</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2677,14 +2684,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">제미나</span>
-                                        <span class="name" aria-label="상품명">(AOS) 피치피치</span>
-                                        <span class="sel-price" aria-label="할인판매가">16% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">2,400</span>
+                                        <span class="category">제미나</span>
+                                        <span class="name">(AOS) 피치피치</span>
+                                        <span class="sel-price">16% <strong>2,000</strong></span>
+                                        <span class="cost">2,400</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">3</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">3</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2694,13 +2701,13 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">딱지스튜디오</span>
-                                        <span class="name" aria-label="상품명">[AOS] Purr</span>
-                                        <span class="cost normal" aria-label="판매가">1,000</span>
+                                        <span class="category">딱지스튜디오</span>
+                                        <span class="name">[AOS] Purr</span>
+                                        <span class="cost normal">1,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">7</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">7</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2710,14 +2717,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">제미나</span>
-                                        <span class="name" aria-label="상품명">(iOS)복숭아 한 개 천원</span>
-                                        <span class="sel-price" aria-label="할인판매가">16% <strong>2,000</strong></span>
-                                        <span class="cost" aria-label="원가">2,400</span>
+                                        <span class="category">제미나</span>
+                                        <span class="name">(iOS)복숭아 한 개 천원</span>
+                                        <span class="sel-price">16% <strong>2,000</strong></span>
+                                        <span class="cost">2,400</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">1</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">1</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2727,14 +2734,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">마가렛</span>
-                                        <span class="name" aria-label="상품명">귀엽고 작은 동물들 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">60% <strong>400</strong></span>
-                                        <span class="cost" aria-label="원가">1,000</span>
+                                        <span class="category">마가렛</span>
+                                        <span class="name">귀엽고 작은 동물들 스티커</span>
+                                        <span class="sel-price">60% <strong>400</strong></span>
+                                        <span class="cost">1,000</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">10</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">10</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2744,14 +2751,14 @@
                                         <span class="down-mark"><span class="blind">다운로드</span></span>
                                     </span>
                                     <span class="pd-info">
-                                        <span class="category" aria-label="판매처">장뱁새스튜디오</span>
-                                        <span class="name" aria-label="상품명">레인보우샤베트 아이스크림 스티커</span>
-                                        <span class="sel-price" aria-label="할인판매가">68% <strong>500</strong></span>
-                                        <span class="cost" aria-label="원가">1,600</span>
+                                        <span class="category">장뱁새스튜디오</span>
+                                        <span class="name">레인보우샤베트 아이스크림 스티커</span>
+                                        <span class="sel-price">68% <strong>500</strong></span>
+                                        <span class="cost">1,600</span>
                                         <span class="review-like">
-                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
-                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
-                                            <span class="like" aria-label="좋아요수">2</span>
+                                            <span class="review"><span class="grade">0</span><span
+                                                    class="grade-num">(0)</span></span>
+                                            <span class="like">2</span>
                                         </span>
                                     </span>
                                 </a>
@@ -2766,7 +2773,7 @@
             <section class="sc-slogan">
                 <div class="slogan-wrap">
                     <div class="slogan-shape" aria-hidden="true"></div>
-                    <div class="slogan-text">Everything coool is here.</div>
+                    <h2 class="slogan-text">Everything coool is here.</h2>
                 </div>
             </section>
             <!-- // slogan -->
