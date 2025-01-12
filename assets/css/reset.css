@@ -1,0 +1,117 @@
+/* reset(초기화) */
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  --suite-font : "SUITE Variable", sans-serif;
+  --aggro-font : "SB Aggro", sans-serif;
+  --favorit-font : "ABC Favorit", sans-serif;
+  --tida-black: #1c1c1b;
+  --tida-menu-white: #f8f7f1;
+  --tida-text-gray-1: #999;
+  --tida-text-gray-2: #888;
+  --tida-variant-yellow: #fed945;
+  --tida-variant-heart-pink: #ffacd4;
+  --tida-variant-orange: #f74927;
+  --tida-variant-green: #50d75d;
+  --tida-variant-lime: #4cf30a;
+  --tida-variant-midblue: #74ccff;
+  --tida-variant-blue: #0d64e7;
+  --tida-variant-purple: #953afb;
+  --tida-variant-lemmon: #fdea9e;
+  --tida-variant-pink: #ffcae4;
+  --tida-variant-coral: #fc8d78;
+  --tida-variant-paleblue: #aecbf6;
+  --tida-variant-skyblue: #bde5fc;
+  --tida-variant-lightpuple: #d5afff;
+  --tida-variant-emerald: #bef3c3;
+  --tida-solid-deactivated-1: #bbb;
+  --tida-solid-deactivated-2: #ddd;
+  --tida-transparent-1: rgba(0, 0, 0, 0.1);
+  --tida-transparent-2: rgba(0, 0, 0, 0.05);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  image-rendering: auto;
+}
+button {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+
+/* FONT SET (폰트 세팅) */
+/* FONT / SUITE */
+@font-face {
+	font-family: 'SUITE Variable';
+	font-weight: 300 900;
+	src: url('../fonts/SUITE/SUITE-Variable.woff2') format('woff2'),
+    url('../fonts/SUITE/SUITE-Variable.ttf') format('truetype');
+}
+/* FONT / SB Aggro */
+@font-face {
+	font-family: 'SB Aggro';
+	font-weight: 300;
+	src: url('../fonts/SBAggro/SBAggroOTF-L.otf') format('opentype'),
+    url('../fonts/SBAggro/SBAggroOTF-L.woff') format('woff');
+}
+@font-face {
+	font-family: 'SB Aggro';
+	font-weight: 500;
+	src: url('../fonts/SBAggro/SBAggroOTF-M.otf') format('opentype'),
+    url('../fonts/SBAggro/SBAggroOTF-M.woff') format('woff');
+}
+@font-face {
+	font-family: 'SB Aggro';
+	font-weight: 700;
+	src: url('../fonts/SBAggro/SBAggroOTF-B.otf') format('opentype'),
+    url('../fonts/SBAggro/SBAggroOTF-B.woff') format('woff');
+}
+/* FONT / ABC Favorit */
+@font-face {
+	font-family: 'ABC Favorit';
+	font-weight: 100 900;
+	src: url('../fonts/ABCFavorit/ABCFavoritVariable-Trial.ttf') format('truetype'),
+    url('../fonts/ABCFavorit/ABCFavoritVariable-Trial.woff') format('woff'),
+    url('../fonts/ABCFavorit/ABCFavoritVariable-Trial.woff2') format('woff2');
+}
+
+/* body */
+body{
+    font-family: var(--suite-font);
+}

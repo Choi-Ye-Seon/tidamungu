@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티다문구점</title>
+
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script defer src="./assets/js/common.js"></script>
+    <script defer src="./assets/js/main.js"></script>
+
+    <!-- lottie JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
+    <!-- gsap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+
+
+<body>
+
+
+    <header id="header">
+        <!-- Header / logo + util -->
+        <div class="inner">
+            <div class="group-menu">
+                <div class="util-area">
+                    <div class="util-list">
+                        <button class="btn-menu" aria-pressed="false" aria-haspopup="menu" aria-expanded="false">
+                            <span class="blind">전체메뉴보기</span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <ul class="util-list">
+                        <li class="util-menu">
+                            <button class="btn-search"><span class="blind">검색</span><i class="ic-search"></i></button>
+                        </li>
+                        <li class="util-menu">
+                            <a href="#" class="link-util"><span class="blind">배송</span><i class="ic-delivery"></i></a>
+                        </li>
+                        <li class="util-menu">
+                            <a href="#" class="link-util"><span class="blind">장바구니</span><i class="ic-cart"></i></a>
+                        </li>
+                        <li class="util-menu login">
+                            <a href="#" class="link-util"><span class="blind">로그인</span><i class="ic-login"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="logo"><a href="#"><img src="./assets/images/logo.svg" alt="티다문구점 로고"></a></h1>
+            </div>
+        </div>
+        <!-- // Header / logo + util -->
+
+        <!-- Nav -->
+        <nav id="nav">
+            <!-- GNB -->
+            <div class="swiper">
+                <div class="swiper-wrapper nav-list" role="menu">
+                    <div class="swiper-slide nav-item home" role="menuitem">
+                        <a href="#" class="link-nav">
+                            <i class="ic-home" aria-hidden="true"></i>
+                            <span class="nav-name">Home</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item hot" role="menuitem">
+                        <a href="#" class="link-nav">
+                            <i class="ic-hot" aria-hidden="true"></i>
+                            <span class="nav-name">Hot</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item tida" data-nav=".tida-sub" role="menuitem" aria-haspopup="menu"
+                        aria-expanded="false">
+                        <a href="#" class="link-nav">
+                            <i class="ic-made" aria-hidden="true"></i>
+                            <span class="nav-name">티다 Made</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item mobile" data-nav=".mobile-sub" role="menuitem"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <a href="#" class="link-nav">
+                            <i class="ic-mobile" aria-hidden="true"></i>
+                            <span class="nav-name">Mobile</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item life" data-nav=".life-sub" role="menuitem" aria-haspopup="menu"
+                        aria-expanded="false">
+                        <a href="#" class="link-nav">
+                            <i class="ic-life" aria-hidden="true"></i>
+                            <span class="nav-name">Life</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item digital" data-nav=".digital-sub" role="menuitem"
+                        aria-haspopup="menu" aria-expanded="false">
+                        <a href="#" class="link-nav">
+                            <i class="ic-digital" aria-hidden="true"></i>
+                            <span class="nav-name">Digital</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item special" role="menuitem">
+                        <a href="#" class="link-nav">
+                            <i class="ic-special" aria-hidden="true"></i>
+                            <span class="nav-name">Special Show</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide nav-item event" role="menuitem">
+                        <a href="#" class="link-nav">
+                            <i class="ic-event" aria-hidden="true"></i>
+                            <span class="nav-name">Event</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- // GNB -->
+
+            <!-- LNB : PC -->
+            <div class="lnb-wrap">
+                <!-- 티다 made -->
+                <div class="submenu-area tida-sub">
+                    <ul class="sub-menu ">
+                        <li class="sub-item"><a href="#" class="link-category">Archive</a></li>
+                    </ul>
+                </div>
+                <!-- // 티다 made -->
+
+                <!-- moblie lnb -->
+                <div class="submenu-area mobile-sub">
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#" class="link-category">휴대폰 케이스</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">아이폰/갤럭시 전모델</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">이어폰 및 케이스</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">유/무선 이어폰</a></li>
+                                <li><a href="#" class="link-submenu">에어팟/버즈 케이스</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">제조사정품 Acc</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">SAMSUNG</a></li>
+                                <li><a href="#" class="link-submenu">Apple</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">모바일 Acc</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">보호필름</a></li>
+                                <li><a href="#" class="link-submenu">보조배터리</a></li>
+                                <li><a href="#" class="link-submenu">태블릿 Acc</a></li>
+                                <li><a href="#" class="link-submenu">충전기/어뎁터/케이블</a></li>
+                                <li><a href="#" class="link-submenu">스마트워치 스트랩</a></li>
+                                <li><a href="#" class="link-submenu">스마트톡</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">휴대폰·유무선상품</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu t-shop">T다이렉트샵</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // moblie lnb -->
+
+                <!-- life lnb -->
+                <div class="submenu-area life-sub">
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#" class="link-category">디지털 라이프</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">즉석카메라/카메라용품</a></li>
+                                <li><a href="#" class="link-submenu">컴퓨터 주변기기</a></li>
+                                <li><a href="#" class="link-submenu">헤드셋</a></li>
+                                <li><a href="#" class="link-submenu">디지털 주변기기</a></li>
+                                <li><a href="#" class="link-submenu">생활가전</a></li>
+                                <li><a href="#" class="link-submenu">디지털미용/헬스케어기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">생활</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">텀블러/머그컵</a></li>
+                                <li><a href="#" class="link-submenu">패션 악세서리</a></li>
+                                <li><a href="#" class="link-submenu">BAG</a></li>
+                                <li><a href="#" class="link-submenu">파우치</a></li>
+                                <li><a href="#" class="link-submenu">인센스/디퓨저</a></li>
+                                <li><a href="#" class="link-submenu">홈패브릭</a></li>
+                                <li><a href="#" class="link-submenu">캠핑용품</a></li>
+                                <li><a href="#" class="link-submenu">생활용품/건강식품</a></li>
+                                <li><a href="#" class="link-submenu">스포츠용품</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">디자인 문구</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">2025년 캘린더</a></li>
+                                <li><a href="#" class="link-submenu">2025년 다이어리</a></li>
+                                <li><a href="#" class="link-submenu">기타문구</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">반려라이프</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">댕댕이꺼</a></li>
+                                <li><a href="#" class="link-submenu">냥냥이꺼</a></li>
+                                <li><a href="#" class="link-submenu">댕냥이 의류/용품</a></li>
+                                <li><a href="#" class="link-submenu">댕냥이 IOT기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">게임</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu t-direct">닌텐도 게임기</a></li>
+                                <li><a href="#" class="link-submenu t-direct">닌텐도 타이틀</a></li>
+                                <li><a href="#" class="link-submenu t-direct">닌텐도 주변기기</a></li>
+                                <li><a href="#" class="link-submenu t-direct">플스 게임기</a></li>
+                                <li><a href="#" class="link-submenu t-direct">플스 타이틀</a></li>
+                                <li><a href="#" class="link-submenu t-direct">플스 주변기기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //life lnb -->
+
+                <!-- digital lnb -->
+                <div class="submenu-area digital-sub">
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#" class="link-category">모바일 배경화면</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">휴대폰 배경화면</a></li>
+                                <li><a href="#" class="link-submenu">PC/태블릿 배경화면</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">카카오톡 테마</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">iOS 테마</a></li>
+                                <li><a href="#" class="link-submenu">Android 테마</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">다이어리 / 플래너</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">먼슬리</a></li>
+                                <li><a href="#" class="link-submenu">위클리</a></li>
+                                <li><a href="#" class="link-submenu">데일리</a></li>
+                                <li><a href="#" class="link-submenu">스터디</a></li>
+                                <li><a href="#" class="link-submenu">가계부</a></li>
+                                <li><a href="#" class="link-submenu">만년형</a></li>
+                                <li><a href="#" class="link-submenu">기타 다이어리</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">노트</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">노트커버</a></li>
+                                <li><a href="#" class="link-submenu">기획/업무</a></li>
+                                <li><a href="#" class="link-submenu">독서/리뷰</a></li>
+                                <li><a href="#" class="link-submenu">기타노트</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">스티커</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu t-direct">캐릭터</a></li>
+                                <li><a href="#" class="link-submenu t-direct">심플</a></li>
+                                <li><a href="#" class="link-submenu t-direct">마스킹테이프</a></li>
+                                <li><a href="#" class="link-submenu t-direct">기타 스티커</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // digital lnb -->
+
+            </div>
+            <!-- // LNB : PC -->
+
+        </nav>
+        <!-- // Nav -->
+
+        <!-- 전체 메뉴 : PC -->
+        <div class="nav-all">
+            <div class="nav-inner">
+                <ul class="depth01-list" role="menu">
+                    <li class="depth01-item active" data-tab=".nav-made" role="presentation"><a href="#"
+                            class="link-depth01" role="menuitem" aria-selected="true">티다 Made</a></li>
+                    <li class="depth01-item" data-tab=".nav-mobile" role="presentation"><a href="#" class="link-depth01"
+                            role="menuitem" aria-selected="false">Mobile</a></li>
+                    <li class="depth01-item" data-tab=".nav-life" role="presentation"><a href="#" class="link-depth01"
+                            role="menuitem" aria-selected="false">Life</a></li>
+                    <li class="depth01-item" data-tab=".nav-digital" role="presentation"><a href="#" class="link-depth01"
+                            role="menuitem" aria-selected="false">Digital</a></li>
+                </ul>
+
+                <div class="nav-wide nav-made view">
+                    <a href="#" class="link-archive">
+                        <i class="ic-arrow"></i>
+                        <span>Archive</span>
+                    </a>
+                </div>
+                <div class="nav-wide nav-mobile">
+                    <ul class="depth02-list">
+                        <li>
+                            <a href="#" class="link-depth02 "><span>휴대폰 케이스</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">아이폰/갤럭시 전모델</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02 "><span>이어폰 및 케이스</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">유/무선 이어폰</a></li>
+                                <li><a href="#" class="link-menu ">에어팟/버즈 케이스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>제조사정품 Acc</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">SAMSUNG</a></li>
+                                <li><a href="#" class="link-menu ">Apple</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>모바일 Acc</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">보호필름</a></li>
+                                <li><a href="#" class="link-menu ">보조배터리</a></li>
+                                <li><a href="#" class="link-menu ">태블릿 Acc</a></li>
+                                <li><a href="#" class="link-menu ">충전기/어뎁터/케이블</a></li>
+                                <li><a href="#" class="link-menu ">스마트워치 스트랩</a></li>
+                                <li><a href="#" class="link-menu ">스마트 톡</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>휴대폰·유무선상품</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu t-shop ">T다이렉트샵</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-wide nav-life">
+                    <ul class="depth02-list">
+                        <li>
+                            <a href="#" class="link-depth02"><span>디지털 라이프</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">즉석카메라/카메라용품</a></li>
+                                <li><a href="#" class="link-menu ">컴퓨터 주변기기</a></li>
+                                <li><a href="#" class="link-menu ">헤드셋</a></li>
+                                <li><a href="#" class="link-menu ">디지털 주변기기</a></li>
+                                <li><a href="#" class="link-menu ">생활가전</a></li>
+                                <li><a href="#" class="link-menu ">디지털미용/헬스케어기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>생활</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">텀블러/머그컵</a></li>
+                                <li><a href="#" class="link-menu ">패션 악세서리</a></li>
+                                <li><a href="#" class="link-menu ">BAG</a></li>
+                                <li><a href="#" class="link-menu ">파우치</a></li>
+                                <li><a href="#" class="link-menu ">인센스/디퓨저/향수</a></li>
+                                <li><a href="#" class="link-menu ">홈 패브릭</a></li>
+                                <li><a href="#" class="link-menu ">캠핑용품</a></li>
+                                <li><a href="#" class="link-menu ">생활용품/건강식품</a></li>
+                                <li><a href="#" class="link-menu ">스포츠용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>디자인 문구</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">2025년 캘린더</a></li>
+                                <li><a href="#" class="link-menu ">2025년 다이어리</a></li>
+                                <li><a href="#" class="link-menu ">기타문구</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>반려라이프</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">댕댕이꺼</a></li>
+                                <li><a href="#" class="link-menu ">냥냥이꺼</a></li>
+                                <li><a href="#" class="link-menu ">댕냥이 의류/용품</a></li>
+                                <li><a href="#" class="link-menu ">댕냥이 IOT기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>게임</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">닌텐도 게임기</a></li>
+                                <li><a href="#" class="link-menu ">닌텐도 타이틀</a></li>
+                                <li><a href="#" class="link-menu ">닌텐도 주변기기기</a></li>
+                                <li><a href="#" class="link-menu ">플스 게임기기</a></li>
+                                <li><a href="#" class="link-menu ">플스 타이틀</a></li>
+                                <li><a href="#" class="link-menu ">플스 주변기기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-wide nav-digital">
+                    <ul class="depth02-list">
+                        <li>
+                            <a href="#" class="link-depth02"><span>모바일 배경화면</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">휴대폰 배경화면</a></li>
+                                <li><a href="#" class="link-menu ">PC/태블릿 배경화면</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>카카오톡 테마</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">iOS 테마</a></li>
+                                <li><a href="#" class="link-menu ">Android 테마</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>다이어리 / 플래너</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">먼슬리</a></li>
+                                <li><a href="#" class="link-menu ">위클리</a></li>
+                                <li><a href="#" class="link-menu ">데일리</a></li>
+                                <li><a href="#" class="link-menu ">스터디</a></li>
+                                <li><a href="#" class="link-menu ">가계부</a></li>
+                                <li><a href="#" class="link-menu ">만년형</a></li>
+                                <li><a href="#" class="link-menu ">기타 다이어리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>노트</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">노트커버</a></li>
+                                <li><a href="#" class="link-menu ">기획/업무</a></li>
+                                <li><a href="#" class="link-menu ">독서/리뷰</a></li>
+                                <li><a href="#" class="link-menu ">기타노트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>스티커</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu ">캐릭터</a></li>
+                                <li><a href="#" class="link-menu ">심플</a></li>
+                                <li><a href="#" class="link-menu ">마스킹테이프</a></li>
+                                <li><a href="#" class="link-menu ">기타 스티커</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-slogan">
+                    <div class="lottie-area"><span class="blind">Everything Coool is Here.</span></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // 전체 메뉴 : PC -->
+
+        <!-- 전체 메뉴 : M -->
+        <div class="nav-all-m">
+            <div class="top-wrap">
+                <div class="group-menu">
+                    <div class="util-area">
+                        <div class="util-list">
+                            <button class="btn-menu" aria-pressed="false" aria-haspopup="menu" aria-expanded="false">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <a href="#" class="link-home"><i class="ic-home"><span class="blind">홈</span></i></a>
+                        </div>
+                        <ul class="util-list">
+                            <li class="util-menu">
+                                <a href="#" class="link-util"><i class="ic-delivery"><span
+                                            class="blind">배송</span></i></a>
+                            </li>
+                            <li class="util-menu login-m">
+                                <a href="#" class="link-util"><i class="ic-my"><span class="blind">로그인</span></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="top-nav" role="menu">
+                    <a href="#" class="special link-nav" role="menuitem">
+                        <i class="ic-special" aria-hidden="true"></i>
+                        <span class="nav-name">Special Show</span>
+                    </a>
+                    <a href="#" class="event link-nav" role="menuitem">
+                        <i class="ic-event" aria-hidden="true"></i>
+                        <span class="nav-name">Event</span>
+                    </a>
+                </div>
+            </div>
+            <div class="group-nav">
+                <!-- tabitem -->
+                <ul class="main-tab" role="tablist">
+                    <li class="main-item active" data-tab=".nav-made" role="presentation"><a href="#"
+                            class="link-depth01" role="tab">티다 Made</a>
+                    </li>
+                    <li class="main-item" data-tab=".nav-mobile" role="presentation"><a href="#" class="link-depth01"
+                            role="tab">Mobile</a></li>
+                    <li class="main-item" data-tab=".nav-life" role="presentation"><a href="#" class="link-depth01"
+                            role="tab">Life</a></li>
+                    <li class="main-item" data-tab=".nav-digital" role="presentation"><a href="#" class="link-depth01"
+                            role="tab">Digital</a></li>
+                </ul>
+                <!-- // tabitem -->
+
+                <!-- tabcon -->
+                <div class="nav-wide nav-made view">
+                    <a href="#" class="link-archive">
+                        <i class="ic-arrow" aria-hidden="true"></i>
+                        <span>Archive</span>
+                    </a>
+                </div>
+                <div class="nav-wide nav-mobile">
+                    <ul class="depth02-list">
+                        <li>
+                            <a href="#" class="link-depth02 "><span>휴대폰 케이스</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--coral">아이폰/갤럭시 전모델</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02 "><span>이어폰 및 케이스</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--purple">유/무선 이어폰</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">에어팟/버즈 케이스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>제조사정품 Acc</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--pink">SAMSUNG</a></li>
+                                <li><a href="#" class="link-menu btn--midBlue">Apple</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>모바일 Acc</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--skyblue">보호필름</a></li>
+                                <li><a href="#" class="link-menu btn--pink">보조배터리</a></li>
+                                <li><a href="#" class="link-menu btn--midBlue">태블릿 Acc</a></li>
+                                <li><a href="#" class="link-menu btn--coral">충전기/어뎁터/케이블</a></li>
+                                <li><a href="#" class="link-menu btn--paleBlue">스마트워치 스트랩</a></li>
+                                <li><a href="#" class="link-menu btn--purple">스마트 톡</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>휴대폰·유무선상품</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu t-shop btn--emerald">T다이렉트샵</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-wide nav-life">
+                    <ul class="depth02-list">
+                        <li>
+                            <a href="#" class="link-depth02"><span>디지털 라이프</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--pink">즉석카메라/카메라용품</a></li>
+                                <li><a href="#" class="link-menu btn--skyblue">컴퓨터 주변기기</a></li>
+                                <li><a href="#" class="link-menu btn--coral">헤드셋</a></li>
+                                <li><a href="#" class="link-menu btn--midBlue">디지털 주변기기</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">생활가전</a></li>
+                                <li><a href="#" class="link-menu btn--purple">디지털미용/헬스케어기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>생활</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--skyblue">텀블러/머그컵</a></li>
+                                <li><a href="#" class="link-menu btn--emerald">패션 악세서리</a></li>
+                                <li><a href="#" class="link-menu btn--pink">BAG</a></li>
+                                <li><a href="#" class="link-menu btn--paleBlue">파우치</a></li>
+                                <li><a href="#" class="link-menu btn--purple">인센스/디퓨저/향수</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">홈 패브릭</a></li>
+                                <li><a href="#" class="link-menu btn--emerald">캠핑용품</a></li>
+                                <li><a href="#" class="link-menu btn--coral">생활용품/건강식품</a></li>
+                                <li><a href="#" class="link-menu btn--skyblue">스포츠용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>디자인 문구</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--coral">2025년 캘린더</a></li>
+                                <li><a href="#" class="link-menu btn--paleBlue">2025년 다이어리</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">기타문구</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>반려라이프</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--purple">댕댕이꺼</a></li>
+                                <li><a href="#" class="link-menu btn--skyblue">냥냥이꺼</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">댕냥이 의류/용품</a></li>
+                                <li><a href="#" class="link-menu btn--coral">댕냥이 IOT기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>게임</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--emerald">닌텐도 게임기</a></li>
+                                <li><a href="#" class="link-menu btn--pink">닌텐도 타이틀</a></li>
+                                <li><a href="#" class="link-menu btn--paleBlue">닌텐도 주변기기기</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">플스 게임기기</a></li>
+                                <li><a href="#" class="link-menu btn--purple">플스 타이틀</a></li>
+                                <li><a href="#" class="link-menu btn--skyblue">플스 주변기기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-wide nav-digital">
+                    <ul class="depth02-list">
+                        <li>
+                            <a href="#" class="link-depth02"><span>모바일 배경화면</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--midBlue">휴대폰 배경화면</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">PC/태블릿 배경화면</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>카카오톡 테마</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--coral">iOS 테마</a></li>
+                                <li><a href="#" class="link-menu btn--purple">Android 테마</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>다이어리 / 플래너</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--midBlue">먼슬리</a></li>
+                                <li><a href="#" class="link-menu btn--emerald">위클리</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">데일리</a></li>
+                                <li><a href="#" class="link-menu btn--paleBlue">스터디</a></li>
+                                <li><a href="#" class="link-menu btn--purple">가계부</a></li>
+                                <li><a href="#" class="link-menu btn--skyblue">만년형</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">기타 다이어리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>노트</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--skyblue">노트커버</a></li>
+                                <li><a href="#" class="link-menu btn--coral">기획/업무</a></li>
+                                <li><a href="#" class="link-menu btn--midBlue">독서/리뷰</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">기타노트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-depth02"><span>스티커</span></a>
+                            <ul class="nav-menulist">
+                                <li><a href="#" class="link-menu btn--emerald">캐릭터</a></li>
+                                <li><a href="#" class="link-menu btn--paleBlue">심플</a></li>
+                                <li><a href="#" class="link-menu btn--pink">마스킹테이프</a></li>
+                                <li><a href="#" class="link-menu btn--lemon">기타 스티커</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // tabcon -->
+            </div>
+        </div>
+        <!-- // 전체 메뉴 : M -->
+
+    </header>
+
+    <header id="headerFixed">
+        <div class="group-menu">
+            <div class="group-util">
+                <div class="all-menu">
+                    <button class="btn-menu" aria-pressed="false" aria-haspopup="menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <ul class="util-area">
+                    <li class="util-menu">
+                        <button class="btn-search"><i class="ic-search"><span class="blind">검색</span></i></button>
+                    </li>
+                    <li class="util-menu">
+                        <a href="#" class="link-util"><i class="ic-delivery"><span class="blind">배송</span></i></a>
+                    </li>
+                    <li class="util-menu">
+                        <a href="#" class="link-util"><i class="ic-cart"><span class="blind">장바구니</span></i></a>
+                    </li>
+                    <li class="util-menu">
+                        <a href="#" class="link-util"><i class="ic-login"><span class="blind">로그인</span></i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="swiper headerfixed">
+                <div class="swiper-wrapper nav-list" role="menu">
+                    <div class="swiper-slide nav-item" role="menuitem">
+                        <a href="#"><span class="nav-name home">Home</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item" role="menuitem">
+                        <a href="#"><span class="nav-name hot">Hot</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item made " data-fixednav=".tida-fix" role="menuitem"
+                        aria-haspopup="menu">
+                        <a href="#"><span class="nav-name">티다 Made</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item mobile " data-fixednav=".mobile-fix" role="menuitem"
+                        aria-haspopup="menu">
+                        <a href="#"><span class="nav-name">Mobile</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item life " data-fixednav=".life-fix" role="menuitem"
+                        aria-haspopup="menu">
+                        <a href="#"><span class="nav-name">Life</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item digital " data-fixednav=".digital-fix" role="menuitem"
+                        aria-haspopup="menu">
+                        <a href="#"><span class="nav-name">Digital</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item" role="menuitem">
+                        <a href="#"><span class="nav-name special">Special Show</span></a>
+                    </div>
+                    <div class="swiper-slide nav-item" role="menuitem">
+                        <a href="#"><span class="nav-name event">Event</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LNB : PC -->
+            <div class="lnb-wrap">
+                <!-- 티다 made -->
+                <div class="submenu-area tida-fix">
+                    <ul class="sub-menu ">
+                        <li class="sub-item"><a href="#" class="link-category">Archive</a></li>
+                    </ul>
+                </div>
+                <!-- // 티다 made -->
+
+                <!-- moblie lnb -->
+                <div class="submenu-area mobile-fix">
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#" class="link-category">휴대폰 케이스</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">아이폰/갤럭시 전모델</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">이어폰 및 케이스</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">유/무선 이어폰</a></li>
+                                <li><a href="#" class="link-submenu">에어팟/버즈 케이스</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">제조사정품 Acc</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">SAMSUNG</a></li>
+                                <li><a href="#" class="link-submenu">Apple</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">모바일 Acc</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">보호필름</a></li>
+                                <li><a href="#" class="link-submenu">보조배터리</a></li>
+                                <li><a href="#" class="link-submenu">태블릿 Acc</a></li>
+                                <li><a href="#" class="link-submenu">충전기/어뎁터/케이블</a></li>
+                                <li><a href="#" class="link-submenu">스마트워치 스트랩</a></li>
+                                <li><a href="#" class="link-submenu">스마트톡</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">휴대폰·유무선상품</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu t-shop">T다이렉트샵</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // moblie lnb -->
+
+                <!-- life lnb -->
+                <div class="submenu-area life-fix">
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#" class="link-category">디지털 라이프</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">즉석카메라/카메라용품</a></li>
+                                <li><a href="#" class="link-submenu">컴퓨터 주변기기</a></li>
+                                <li><a href="#" class="link-submenu">헤드셋</a></li>
+                                <li><a href="#" class="link-submenu">디지털 주변기기</a></li>
+                                <li><a href="#" class="link-submenu">생활가전</a></li>
+                                <li><a href="#" class="link-submenu">디지털미용/헬스케어기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">생활</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">텀블러/머그컵</a></li>
+                                <li><a href="#" class="link-submenu">패션 악세서리</a></li>
+                                <li><a href="#" class="link-submenu">BAG</a></li>
+                                <li><a href="#" class="link-submenu">파우치</a></li>
+                                <li><a href="#" class="link-submenu">인센스/디퓨저</a></li>
+                                <li><a href="#" class="link-submenu">홈패브릭</a></li>
+                                <li><a href="#" class="link-submenu">캠핑용품</a></li>
+                                <li><a href="#" class="link-submenu">생활용품/건강식품</a></li>
+                                <li><a href="#" class="link-submenu">스포츠용품</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">디자인 문구</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">2025년 캘린더</a></li>
+                                <li><a href="#" class="link-submenu">2025년 다이어리</a></li>
+                                <li><a href="#" class="link-submenu">기타문구</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">반려라이프</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">댕댕이꺼</a></li>
+                                <li><a href="#" class="link-submenu">냥냥이꺼</a></li>
+                                <li><a href="#" class="link-submenu">댕냥이 의류/용품</a></li>
+                                <li><a href="#" class="link-submenu">댕냥이 IOT기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">게임</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu t-direct">닌텐도 게임기</a></li>
+                                <li><a href="#" class="link-submenu t-direct">닌텐도 타이틀</a></li>
+                                <li><a href="#" class="link-submenu t-direct">닌텐도 주변기기</a></li>
+                                <li><a href="#" class="link-submenu t-direct">플스 게임기</a></li>
+                                <li><a href="#" class="link-submenu t-direct">플스 타이틀</a></li>
+                                <li><a href="#" class="link-submenu t-direct">플스 주변기기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //life lnb -->
+
+                <!-- digital lnb -->
+                <div class="submenu-area digital-fix">
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#" class="link-category">모바일 배경화면</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">휴대폰 배경화면</a></li>
+                                <li><a href="#" class="link-submenu">PC/태블릿 배경화면</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">카카오톡 테마</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">iOS 테마</a></li>
+                                <li><a href="#" class="link-submenu">Android 테마</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">다이어리 / 플래너</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">먼슬리</a></li>
+                                <li><a href="#" class="link-submenu">위클리</a></li>
+                                <li><a href="#" class="link-submenu">데일리</a></li>
+                                <li><a href="#" class="link-submenu">스터디</a></li>
+                                <li><a href="#" class="link-submenu">가계부</a></li>
+                                <li><a href="#" class="link-submenu">만년형</a></li>
+                                <li><a href="#" class="link-submenu">기타 다이어리</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">노트</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu">노트커버</a></li>
+                                <li><a href="#" class="link-submenu">기획/업무</a></li>
+                                <li><a href="#" class="link-submenu">독서/리뷰</a></li>
+                                <li><a href="#" class="link-submenu">기타노트</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#" class="link-category">스티커</a>
+                            <ul>
+                                <li><a href="#" class="link-submenu t-direct">캐릭터</a></li>
+                                <li><a href="#" class="link-submenu t-direct">심플</a></li>
+                                <li><a href="#" class="link-submenu t-direct">마스킹테이프</a></li>
+                                <li><a href="#" class="link-submenu t-direct">기타 스티커</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // digital lnb -->
+
+            </div>
+            <!-- // LNB : PC -->
+
+        </div>
+
+    </header>
+
+    <main id="container">
+        <div class="inner">
+            <!-- 이벤트 배너 -->
+            <section class="sc-banner">
+                <h2 class="blind">메인 배너</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img01.jpg" alt="T1 시그니처 모바일 액세서리" class="visual-pc">
+                            <img src="./assets/images/m-visual-img01.jpg" alt="T1 시그니처 모바일 액세서리" class="visual-m">
+                            <span class="banner-title">
+                                <strong>T1 시그니처<br>모바일 액세서리</strong>
+                                <span>티다문구점 × T1 × 페스티버 스페셜 콜라보</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img02.jpg" alt="티다문구점과 함께 2025 갓생 설계" class="visual-pc">
+                            <img src="./assets/images/m-visual-img02.jpg" alt="티다문구점과 함께 2025 갓생 설계" class="visual-m">
+                            <span class="banner-title">
+                                <strong>티다문구점과 함께<br>2025 갓생 설계</strong>
+                                <span>아름다운 그림이 매력인 다이어리&캘린더 한눈에 보기</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img03.png" alt="커피 향 가득 홈카페의 모든 것" class="visual-pc">
+                            <img src="./assets/images/m-visual-img03.png" alt="커피 향 가득 홈카페의 모든 것" class="visual-m">
+                            <span class="banner-title">
+                                <strong>커피 향 가득<br>홈카페의 모든 것</strong>
+                                <span>집에서도 간편하게 최상의 커피를 즐겨보세요.</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img04.jpg" alt="iPad mini 7 킥이 되는 액세서리" class="visual-pc">
+                            <img src="./assets/images/m-visual-img04.jpg" alt="iPad mini 7 킥이 되는 액세서리" class="visual-m">
+                            <span class="banner-title">
+                                <strong>iPad mini 7<br>킥이 되는 액세서리</strong>
+                                <span>케이스와 보호필름, 충전기까지</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img05.jpg" alt="애플 정품 액세서리 최대 83% 할인" class="visual-pc">
+                            <img src="./assets/images/m-visual-img05.jpg" alt="애플 정품 액세서리 최대 83% 할인" class="visual-m">
+                            <span class="banner-title">
+                                <strong>애플 정품 액세서리<br>최대 83% 할인</strong>
+                                <span>iPhone을 더욱 특별하게 만드는 액세서리</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img06.jpg" alt="아이폰 16에 딱 맞는 다채로운 액세서리" class="visual-pc">
+                            <img src="./assets/images/m-visual-img06.jpg" alt="아이폰 16에 딱 맞는 다채로운 액세서리" class="visual-m">
+                            <span class="banner-title">
+                                <strong>아이폰 16에 딱 맞는<br>다채로운 액세서리</strong>
+                                <span>아이폰 16 출시 기념 모바일 액세서리 모음전</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img07.jpg" alt="필립스 사운드 빅-세일 페스타" class="visual-pc">
+                            <img src="./assets/images/m-visual-img07.jpg" alt="필립스 사운드 빅-세일 페스타" class="visual-m">
+                            <span class="banner-title">
+                                <strong>필립스 사운드<br>빅-세일 페스타</strong>
+                                <span>필립스 헤드폰 2만 원 대 구매 기회를 놓치지 마세요</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img09.jpg" alt="갤럭시 S24 FE 정품 케이스로 완벽 보호"
+                                class="visual-pc">
+                            <img src="./assets/images/m-visual-img09.jpg" alt="갤럭시 S24 FE 정품 케이스로 완벽 보호"
+                                class="visual-m">
+                            <span class="banner-title">
+                                <strong>갤럭시 S24 FE<br>정품 케이스로 완벽 보호</strong>
+                                <span>완벽한 내구성으로 스마트폰을 안전하게</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img10.jpg" alt="갤럭시 Z 폴드6 | Z 플립6 액세서리" class="visual-pc">
+                            <img src="./assets/images/m-visual-img10.jpg" alt="갤럭시 Z 폴드6 | Z 플립6 액세서리" class="visual-m">
+                            <span class="banner-title">
+                                <strong>갤럭시 Z 폴드6 | Z 플립6<br>액세서리</strong>
+                                <span>삼성 정품 액세서리 최대 46% 할인</span>
+                            </span>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img src="./assets/images/visual-img11.jpg" alt="문구점 이용권으로 디지털 가전 득템!" class="visual-pc">
+                            <img src="./assets/images/m-visual-img11.jpg" alt="문구점 이용권으로 디지털 가전 득템!" class="visual-m">
+                            <span class="banner-title">
+                                <strong>문구점 이용권으로<br>디지털 가전 득템!</strong>
+                                <span>인터넷/B tv가입하면 최대 45만 원 혜택</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-button-next" role="button" aria-label="이전슬라이드"><i class="ic-arrow next"><span
+                                class="blind">이전슬라이드</span></i></div>
+                    <div class="swiper-button-prev" role="button" aria-label="다음슬라이드"><i class="ic-arrow prev"><span
+                                class="blind">다음슬라이드</span></i></div>
+                    <div class="swiper-control">
+                        <div class="slide-fraction">
+                            <span class="curr"><span class="blind">현재슬라이드</span></span>
+                            <span class="total"><span class="blind">총 슬라이드</span></span>
+                        </div>
+                        <button class="btn-control swiper-play" role="button" aria-pressed="true"><span
+                                class="blind">슬라이드 재생</span></button>
+                        <button class="btn-control swiper-pause" role="button" aria-pressed="false"><span
+                                class="blind">슬라이드 멈춤</span></button>
+                    </div>
+                </div>
+            </section>
+            <!-- // 이벤트 배너 -->
+
+            <!-- 슬라이드 배너 -->
+            <section class="sc-slide-banner">
+                <div class="lottie-area">
+                    <h2 class="blind">That's Cool Everything. You have is cool.</h2>
+                </div>
+            </section>
+
+            <!-- 지금 뜨는 베스트 -->
+            <section class="sc-best">
+                <div class="tab-area">
+                    <div class="sc__title">
+                        <span>지금 뜨는 베스트</span>
+                        <h2>Best</h2>
+                    </div>
+                    <ul class="tab-list" role="tablist">
+                        <li class="tab-menu mobile active" data-tab=".best-mobile" role="tab" aria-pressed="true">
+                            <span>Mobile</span>
+                        </li>
+                        <li class="tab-menu life " data-tab=".best-life" role="tab" aria-pressed="false">
+                            <span>Life</span>
+                        </li>
+                        <li class="tab-menu digital" data-tab=".best-digital" role="tab" aria-pressed="false">
+                            <span>Digital</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="view-area">
+                    <div class="tab-view best-mobile on">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd01.png" alt="곽철이 아크릴 스마트톡">
+                                        <span class="num-mark"><span class="blind">순위</span>1</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">곽철이 아크릴 스마트톡</span>
+                                        <span class="sel-price" aria-label="할인판매가">29% <strong>9,500</strong></span>
+                                        <span class="cost" aria-label="원가">13,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd02.png" alt="아이폰 카메라보호 강화유리필름 2매">
+                                        <span class="num-mark"><span class="blind">순위</span>2</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">벤토사</span>
+                                        <span class="name" aria-label="상품명">아이폰 카메라보호 강화유리필름 2매</span>
+                                        <span class="sel-price" aria-label="할인판매가">27% <strong>6,900</strong></span>
+                                        <span class="cost" aria-label="원가">9,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(2)</span></span>
+                                            <span class="like" aria-label="좋아요수">64</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd03.png" alt="갤럭시 Z폴드6 슬림 S펜 케이스">
+                                        <span class="num-mark"><span class="blind">순위</span>3</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">갤럭시 Z폴드6 슬림 S펜 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">41% <strong>64,800</strong></span>
+                                        <span class="cost" aria-label="원가">110,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">2.3</span><span
+                                                    class="grade-num" aria-label="리뷰수">(3)</span></span>
+                                            <span class="like" aria-label="좋아요수">38</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd04.png" alt="아이폰16시리즈 할로락 클래식 케이스">
+                                        <span class="num-mark"><span class="blind">순위</span>4</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">ESR</span>
+                                        <span class="name" aria-label="상품명">아이폰16시리즈 할로락 클래식 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">36% <strong>15,900</strong></span>
+                                        <span class="cost" aria-label="원가">24,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(2)</span></span>
+                                            <span class="like" aria-label="좋아요수">40</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd05.png" alt="삼성 25W 유무선 초고속 보조배터리">
+                                        <span class="num-mark"><span class="blind">순위</span>5</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">삼성 25W 유무선 초고속 보조배터리</span>
+                                        <span class="sel-price" aria-label="할인판매가">46% <strong>38,000</strong></span>
+                                        <span class="cost" aria-label="원가">71,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
+                                            <span class="like" aria-label="좋아요수">47</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd06.png" alt="블루투스5.3 ANC노이즈캔슬링 이어폰">
+                                        <span class="num-mark"><span class="blind">순위</span>6</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">아이리버</span>
+                                        <span class="name" aria-label="상품명">블루투스5.3 ANC노이즈캔슬링 이어폰</span>
+                                        <span class="sel-price" aria-label="할인판매가">56% <strong>38,900</strong></span>
+                                        <span class="cost" aria-label="원가">89,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(3)</span></span>
+                                            <span class="like" aria-label="좋아요수">39</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd07.png" alt="짱구흰둥이 에어판 프로/프로2 케이스">
+                                        <span class="num-mark"><span class="blind">순위</span>7</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">BOB</span>
+                                        <span class="name" aria-label="상품명">짱구흰둥이 에어판 프로/프로2 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">10% <strong>13,320</strong></span>
+                                        <span class="cost" aria-label="원가">14,800</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">4</span><span
+                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
+                                            <span class="like" aria-label="좋아요수">19</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd08.png" alt="프로13 7세대 마이폴리오 거치케이스">
+                                        <span class="num-mark"><span class="blind">순위</span>8</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">아라리</span>
+                                        <span class="name" aria-label="상품명">프로13 7세대 마이폴리오 거치케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">16% <strong>30,000</strong></span>
+                                        <span class="cost" aria-label="원가">35,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">8</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd09.png" alt="애플워치 액정보호 풀커버 투명케이스">
+                                        <span class="num-mark"><span class="blind">순위</span>9</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">벤토사</span>
+                                        <span class="name" aria-label="상품명">애플워치 액정보호 풀커버 투명케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">27% <strong>7,900</strong></span>
+                                        <span class="cost" aria-label="원가">10,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label=" 좋아요수">18</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-view best-life">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
+                                        <span class="num-mark"><span class="blind">순위</span>1</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
+                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
+                                        <span class="num-mark"><span class="blind">순위</span>2</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">4,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd03.png" alt="치즈 토이 카메라 (SD카드 증정)">
+                                        <span class="num-mark"><span class="blind">순위</span>3</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">카카오프렌즈</span>
+                                        <span class="name" aria-label="상품명">치즈 토이 카메라 (SD카드 증정)</span>
+                                        <span class="sel-price" aria-label="할인판매가">18% <strong>39,900</strong></span>
+                                        <span class="cost" aria-label="원가">49,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">35</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd04.png" alt="필립스 무선 블루투스 헤드폰 TAH7508">
+                                        <span class="num-mark"><span class="blind">순위</span>4</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">필립스</span>
+                                        <span class="name" aria-label="상품명">필립스 무선 블루투스 헤드폰 TAH7508</span>
+                                        <span class="sel-price" aria-label="할인판매가">11% <strong>79,000</strong></span>
+                                        <span class="cost" aria-label="원가">89,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">7</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd05.png" alt="샤오미 레드미워치3 액티브">
+                                        <span class="num-mark"><span class="blind">순위</span>5</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">샤오미</span>
+                                        <span class="name" aria-label="상품명">샤오미 레드미워치3 액티브</span>
+                                        <span class="cost normal" aria-label="판매가">44,800</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">29</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd06.png" alt="샤오미 미니 진공청소기">
+                                        <span class="num-mark"><span class="blind">순위</span>6</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">샤오미</span>
+                                        <span class="name" aria-label="상품명">샤오미 미니 진공청소기</span>
+                                        <span class="cost normal" aria-label="판매가">54,800</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">35</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd07.png" alt="디지털 LED 스마트 인바디 체중계">
+                                        <span class="num-mark"><span class="blind">순위</span>7</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">오아</span>
+                                        <span class="name" aria-label="상품명">디지털 LED 스마트 인바디 체중계</span>
+                                        <span class="sel-price" aria-label="할인판매가">8% <strong>31,000</strong></span>
+                                        <span class="cost" aria-label="원가">34,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">20</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd08.png" alt="라떼 캠핑 미니버너 MINI-A">
+                                        <span class="num-mark"><span class="blind">순위</span>8</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">맥스</span>
+                                        <span class="name" aria-label="상품명">라떼 캠핑 미니버너 MINI-A</span>
+                                        <span class="sel-price" aria-label="할인판매가">23% <strong>45,900</strong></span>
+                                        <span class="cost" aria-label="원가">59,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">30</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd09.png" alt="스마트태그2 위치 추적기 반려동물">
+                                        <span class="num-mark"><span class="blind">순위</span>9</span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">스마트태그2 위치 추적기 반려동물</span>
+                                        <span class="sel-price" aria-label="할인판매가">25% <strong>27,000</strong></span>
+                                        <span class="cost" aria-label="원가">36,300</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">1</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-view best-digital">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd01.png" alt="스터디 플래너 에메랄드 / 월 시작">
+                                        <span class="num-mark"><span class="blind">순위</span>1</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span>
+                                    </span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">코난발네개</span>
+                                        <span class="name" aria-label="상품명">스터디 플래너 에메랄드 / 월 시작</span>
+                                        <span class="sel-price" aria-label="할인판매가">21% <strong>5,500</strong></span>
+                                        <span class="cost" aria-label="원가">7,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd02.png" alt="올인원 스터디 플래너 선셋 / 월 시작">
+                                        <span class="num-mark"><span class="blind">순위</span>2</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">코난발네개</span>
+                                        <span class="name" aria-label="상품명">올인원 스터디 플래너 선셋 / 월 시작</span>
+                                        <span class="sel-price" aria-label="할인판매가">21% <strong>5,500</strong></span>
+                                        <span class="cost" aria-label="원가">7,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd03.png" alt="푸딩 위클리 플래너">
+                                        <span class="num-mark"><span class="blind">순위</span>3</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">쿠키즈</span>
+                                        <span class="name" aria-label="상품명">푸딩 위클리 플래너</span>
+                                        <span class="sel-price" aria-label="할인판매가">16% <strong>2,500</strong></span>
+                                        <span class="cost" aria-label="원가">3,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">1</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd04.png" alt="행운을 드려요 메모지 스티커">
+                                        <span class="num-mark"><span class="blind">순위</span>4</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">씨야</span>
+                                        <span class="name" aria-label="상품명">행운을 드려요 메모지 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">95% <strong>100</strong></span>
+                                        <span class="cost" aria-label="원가">2,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">3</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd05.png" alt="한달살기 여행 플래너">
+                                        <span class="num-mark"><span class="blind">순위</span>5</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
+                                        <span class="name" aria-label="상품명">한달살기 여행 플래너</span>
+                                        <span class="sel-price" aria-label="할인판매가">34% <strong>8,200</strong></span>
+                                        <span class="cost" aria-label="원가">12,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd06.png" alt="먼슬리 아깽이 스티커">
+                                        <span class="num-mark"><span class="blind">순위</span>6</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">씨야</span>
+                                        <span class="name" aria-label="상품명">먼슬리 아깽이 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">21% <strong>1,800</strong></span>
+                                        <span class="cost" aria-label="원가">2,300</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd07.png" alt="스티치 알파벳_소문자(3set)">
+                                        <span class="num-mark"><span class="blind">순위</span>7</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">마이꾸꾸</span>
+                                        <span class="name" aria-label="상품명">스티치 알파벳_소문자(3set)</span>
+                                        <span class="cost normal" aria-label="판매가">2,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd08.png" alt="스티치 알파벳_대문자(3set)">
+                                        <span class="num-mark"><span class="blind">순위</span>8</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">마이꾸꾸</span>
+                                        <span class="name" aria-label="상품명">스티치 알파벳_대문자(3set)</span>
+                                        <span class="cost normal" aria-label="판매가">2,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="product-item">
+                                <a href="#" class="link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd09.png" alt="말랑이2">
+                                        <span class="num-mark"><span class="blind">순위</span>9</span>
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">도란</span>
+                                        <span class="name" aria-label="상품명">말랑이2</span>
+                                        <span class="sel-price" aria-label="할인판매가">33% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">3,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- // 지금 뜨는 베스트 -->
+
+            <!-- Sticky Banner -->
+            <section class="sc-sticky-banner">
+                <h2 class="blind">이벤트 배너</h2>
+                <a href="#" class="sticky-item t1"><span>T1 모바일 액세서리</span></a>
+                <a href="#" class="sticky-item sports"><span>가을맞이 스포츠용품 할인</span></a>
+                <a href="#" class="sticky-item coffee"><span>커피 향 가득 홈카페 라이프</span></a>
+                <a href="#" class="sticky-item life"><span>티다문구점과 함께 2025 <br>갓생 설계</span></a>
+                <a href="#" class="sticky-item iPad"><span>iPad mini 7 액세서리</span></a>
+            </section>
+            <!-- // Sticky Banner -->
+
+            <!-- 놓치면 안될 특가 상품 Hot Sale -->
+            <section class="sc-hot-sale">
+                <div class="tab-area">
+                    <div class="sc__title">
+                        <span>놓치면 안될 특가 상품</span>
+                        <h2>Hot Sale</h2>
+                    </div>
+                    <div class="tab-bar">
+                        <ul class="tab-list" role="tablist">
+                            <li class="tab-menu mobile active" data-tab=".sale-mobile" data-btn=".btn-mobile" role="tab" aria-pressed="true">
+                                <span>Mobile</span>
+                            </li>
+                            <li class="tab-menu life " data-tab=".sale-life" data-btn=".btn-life" role="tab" aria-pressed="false">
+                                <span>Life</span>
+                            </li>
+                            <li class="tab-menu digital" data-tab=".sale-digital" data-btn=".btn-digital" role="tab" aria-pressed="false">
+                                <span>Digital</span>
+                            </li>
+                        </ul>
+                        <div class="swiper-btn">
+                            <!-- mobile btn -->
+                            <div class="btn-item btn-mobile on">
+                                <button class="mobile-btn-prev" aria-label="이전슬라이드">
+                                    <i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i>
+                                </button>
+                                <button class="mobile-btn-next" aria-label="다음슬라이드">
+                                    <i class="ic-arrow next"><span class="blind">다음슬라이드</span></i>
+                                </button>
+                            </div>
+                            <!-- life btn -->
+                            <div class="btn-item btn-life">
+                                <button class="life-btn-prev" aria-label="이전슬라이드">
+                                    <i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i>
+                                </button>
+                                <button class="life-btn-next" aria-label="다음슬라이드">
+                                    <i class="ic-arrow next"><span class="blind">다음슬라이드</span></i>
+                                </button>
+                            </div>
+                            <!-- digital btn -->
+                            <div class="btn-item btn-digital">
+                                <button class="digital-btn-prev" aria-label="이전슬라이드">
+                                    <i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i>
+                                </button>
+                                <button class="digital-btn-next" aria-label="다음슬라이드">
+                                    <i class="ic-arrow next"><span class="blind">다음슬라이드</span></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-area">
+                    <div class="tab-view sale-mobile on">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd01.png" alt="곽철이 아크릴 스마트톡">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">곽철이 아크릴 스마트톡</span>
+                                        <span class="sel-price" aria-label="할인판매가">29% <strong>9,500</strong></span>
+                                        <span class="cost" aria-label="원가">13,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd10.png" alt="2IN1보조배터리5000mAh 8핀(C케이블)">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">필로</span>
+                                        <span class="name" aria-label="상품명">2IN1보조배터리5000mAh 8핀(C케이블)</span>
+                                        <span class="sel-price" aria-label="할인판매가">46% <strong>11,900</strong></span>
+                                        <span class="cost" aria-label="원가">22,400</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">6</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd11.png" alt="필로PD20w2구고속충전기 케이블미포함">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">필로</span>
+                                        <span class="name" aria-label="상품명">필로PD20w2구고속충전기 케이블미포함</span>
+                                        <span class="sel-price" aria-label="할인판매가">30% <strong>11,900</strong></span>
+                                        <span class="cost" aria-label="원가">17,200</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">7</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd12.png" alt="무선 충전 호환 스마트링 거치대">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">벤토사</span>
+                                        <span class="name" aria-label="상품명">무선 충전 호환 스마트링 거치대</span>
+                                        <span class="sel-price" aria-label="할인판매가">40% <strong>5,900</strong></span>
+                                        <span class="cost" aria-label="원가">9,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd13.png" alt="(아크릴 플라톡) 말티잔">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">168CM케이스</span>
+                                        <span class="name" aria-label="상품명">(아크릴 플라톡) 말티잔</span>
+                                        <span class="sel-price" aria-label="할인판매가">45% <strong>9,800</strong></span>
+                                        <span class="cost" aria-label="원가">18,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd14.png" alt="애플워치 밀레니즈루프 스트랩 ML">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">힐링쉴드</span>
+                                        <span class="name" aria-label="상품명">애플워치 밀레니즈루프 스트랩 ML</span>
+                                        <span class="sel-price" aria-label="할인판매가">12% <strong>9,900</strong></span>
+                                        <span class="cost" aria-label="원가">11,300</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">5</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd15.png" alt="iPhone 14 Plus 실리콘 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">Apple</span>
+                                        <span class="name" aria-label="상품명">iPhone 14 Plus 실리콘 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">87% <strong>8,900</strong></span>
+                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
+                                            <span class="like" aria-label="좋아요수">15</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd16.png" alt="iPhone 15 Plus 투명 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">Apple</span>
+                                        <span class="name" aria-label="상품명">iPhone 15 Plus 투명 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">62% <strong>25,900</strong></span>
+                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">11</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-view sale-life">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
+                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">4,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd10.png" alt="키니 스트라이프 크롭탑">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">키니키니</span>
+                                        <span class="name" aria-label="상품명">키니 스트라이프 크롭탑</span>
+                                        <span class="sel-price" aria-label="할인판매가">10% <strong>22,500</strong></span>
+                                        <span class="cost" aria-label="원가">25,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">3</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd11.png" alt="키니 트레이닝 집업">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">키니키니</span>
+                                        <span class="name" aria-label="상품명">키니 트레이닝 집업</span>
+                                        <span class="sel-price" aria-label="할인판매가">10% <strong>38,700</strong></span>
+                                        <span class="cost" aria-label="원가">43,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">4</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd12.png" alt="선인장 고양이 스크래쳐 TR700">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">헬로망치</span>
+                                        <span class="name" aria-label="상품명">선인장 고양이 스크래쳐 TR700</span>
+                                        <span class="sel-price" aria-label="할인판매가">41% <strong>28,000</strong></span>
+                                        <span class="cost" aria-label="원가">48,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
+                                            <span class="like" aria-label="좋아요수">4</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd13.png" alt="제트 펫 강아지 고양이 드라이기">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">헬로망치</span>
+                                        <span class="name" aria-label="상품명">제트 펫 강아지 고양이 드라이기</span>
+                                        <span class="sel-price" aria-label="할인판매가">40% <strong>29,000</strong></span>
+                                        <span class="cost" aria-label="원가">49,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">7</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd14.png" alt="이리와 펫 대용량 자동급식기">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">오아</span>
+                                        <span class="name" aria-label="상품명">이리와 펫 대용량 자동급식기</span>
+                                        <span class="sel-price" aria-label="할인판매가">4% <strong>75,000</strong></span>
+                                        <span class="cost" aria-label="원가">78,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">1</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd15.png" alt="[PS4] 더 라스트 오브 어스 Hits">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">플레이스테이션</span>
+                                        <span class="name" aria-label="상품명">[PS4] 더 라스트 오브 어스 Hits</span>
+                                        <span class="sel-price" aria-label="할인판매가">13% <strong>19,800</strong></span>
+                                        <span class="cost" aria-label="원가">22,800</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-view sale-digital">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd10.png" alt="스터디 플래너 4컬러 set_세로형">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">세세</span>
+                                        <span class="name" aria-label="상품명">스터디 플래너 4컬러 set_세로형</span>
+                                        <span class="sel-price" aria-label="할인판매가">46% <strong>800</strong></span>
+                                        <span class="cost" aria-label="원가">1,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">3</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd11.png" alt="데일리 플래너 4컬러 set_세로형">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">세세</span>
+                                        <span class="name" aria-label="상품명">데일리 플래너 4컬러 set_세로형</span>
+                                        <span class="sel-price" aria-label="할인판매가">46% <strong>800</strong></span>
+                                        <span class="cost" aria-label="원가">1,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">6</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd12.png" alt="화이트&블랙 위클리 플래너+스티커">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
+                                        <span class="name" aria-label="상품명">화이트&블랙 위클리 플래너+스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">42% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">3,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">4</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd13.png" alt="Monthly Record 만년형 먼슬리플래너">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">조아즈</span>
+                                        <span class="name" aria-label="상품명">Monthly Record 만년형 먼슬리플래너</span>
+                                        <span class="sel-price" aria-label="할인판매가">70% <strong>1,500</strong></span>
+                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd14.png" alt="먼슬리 플래너+노트(8색)+스티커 set">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
+                                        <span class="name" aria-label="상품명">먼슬리 플래너+노트(8색)+스티커 set</span>
+                                        <span class="sel-price" aria-label="할인판매가">43% <strong>4,500</strong></span>
+                                        <span class="cost" aria-label="원가">8,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">11</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd15.png" alt="한달살기 여행 플래너">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">다람이네잡화점</span>
+                                        <span class="name" aria-label="상품명">한달살기 여행 플래너</span>
+                                        <span class="sel-price" aria-label="할인판매가">34% <strong>8,200</strong></span>
+                                        <span class="cost" aria-label="원가">12,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd16.png" alt="파스텔 데일리 플래너">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">두둠치치</span>
+                                        <span class="name" aria-label="상품명">파스텔 데일리 플래너</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>1,500</strong></span>
+                                        <span class="cost" aria-label="원가">3,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd17.png" alt="클래식 블루 포토앨범 2종+스티커">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">옐로우든</span>
+                                        <span class="name" aria-label="상품명">클래식 블루 포토앨범 2종+스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">51% <strong>2,900</strong></span>
+                                        <span class="cost" aria-label="원가">6,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // 놓치면 안될 특가 상품 Hot Sale -->
+
+            <!-- 방금 나온 신제품 New Arrival-->
+            <section class="sc-new-arrival">
+                <div class="sc__title">
+                    <span>방금 나온 신제품</span>
+                    <h2>New Arrival</h2>
+                </div>
+                <div class="new-arrival-wrap">
+                    <div class="cursor" aria-hidden="true"></div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">티다문구점</span>
+                                    <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
+                                    <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
+                                    <span class="cost" aria-label="원가">4,000</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">0</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">티다문구점</span>
+                                    <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
+                                    <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
+                                    <span class="cost" aria-label="원가">5,000</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">0</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/new-pd01.png" alt="방한 넥워머 목토시 멀티스카프 기모">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">네파세이프티</span>
+                                    <span class="name" aria-label="상품명">방한 넥워머 목토시 멀티스카프 기모</span>
+                                    <span class="sel-price" aria-label="할인판매가">24% <strong>21,900</strong></span>
+                                    <span class="cost" aria-label="원가">29,000</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">0</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/new-pd02.png" alt="네파세이프티 방한귀마개귀덮개귀도리">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">네파세이프티</span>
+                                    <span class="name" aria-label="상품명">네파세이프티 방한귀마개귀덮개귀도리</span>
+                                    <span class="sel-price" aria-label="할인판매가">30% <strong>12,900</strong></span>
+                                    <span class="cost" aria-label="원가">18,600</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">0</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/new-pd03.png" alt="옵타움퍼퓸미니핸드크림4종세트10ml*4">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">옵타움</span>
+                                    <span class="name" aria-label="상품명">옵타움퍼퓸미니핸드크림4종세트10ml*4</span>
+                                    <span class="sel-price" aria-label="할인판매가">30% <strong>15,900</strong></span>
+                                    <span class="cost" aria-label="원가">23,000</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">0</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/new-pd04.png" alt="캠핑 혼술 소주 자동 LED 디스펜서">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">벤토사</span>
+                                    <span class="name" aria-label="상품명">캠핑 혼술 소주 자동 LED 디스펜서</span>
+                                    <span class="sel-price" aria-label="할인판매가">25% <strong>25,900</strong></span>
+                                    <span class="cost" aria-label="원가">34,900</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">0</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/new-pd05.png" alt="M3 멀티플 LED랜턴">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">루메나</span>
+                                    <span class="name" aria-label="상품명">M3 멀티플 LED랜턴</span>
+                                    <span class="sel-price" aria-label="할인판매가">17% <strong>56,900</strong></span>
+                                    <span class="cost" aria-label="원가">69,000</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">1</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/new-pd06.png" alt="너무편한스핀워시물걸레청소기&세척통">
+                                <a href="#" class="link-product">
+                                    <span class="category" aria-label="판매처">에코너</span>
+                                    <span class="name" aria-label="상품명">너무편한스핀워시물걸레청소기&세척통</span>
+                                    <span class="sel-price" aria-label="할인판매가">35% <strong>39,800</strong></span>
+                                    <span class="cost" aria-label="원가">61,500</span>
+                                    <span class="review-like">
+                                        <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                        <span class="like" aria-label="좋아요수">1</span>
+                                    </span>
+                                    <span class="new-mark">재입고</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- // 방금 나온 신제품 New Arrival -->
+
+            <!-- 티다문구점 MD 추천 MD PICK -->
+            <section class="sc-md-pick">
+                <div class="tab-area">
+                    <div class="sc__title">
+                        <span>티다문구점 MD 추천</span>
+                        <h2>MD Pick</h2>
+                    </div>
+                    <div class="tab-bar">
+                        <ul class="tab-list">
+                            <li class="tab-menu mobile active" data-tab=".md-mobile" data-btn=".btn-mobile"><span>Mobile</span></li>
+                            <li class="tab-menu life " data-tab=".md-life" data-btn=".btn-life"><span>Life</span></li>
+                            <li class="tab-menu digital" data-tab=".md-digital" data-btn=".btn-digital"><span>Digital</span></li>
+                        </ul>
+                        <div class="swiper-btn">
+                            <!-- mobile btn -->
+                            <div class="btn-item btn-mobile on">
+                                <button class="mobile-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i></button>
+                                <button class="mobile-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span class="blind">다음슬라이드</span></i></button>
+                            </div>
+                            <!-- life btn -->
+                            <div class="btn-item btn-life">
+                                <button class="life-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i></button>
+                                <button class="life-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span class="blind">다음슬라이드</span></i></button>
+                            </div>
+                            <!-- digital btn -->
+                            <div class="btn-item btn-digital">
+                                <button class="digital-btn-prev" aria-label="이전슬라이드"><i class="ic-arrow prev"><span class="blind">이전슬라이드</span></i></button>
+                                <button class="digital-btn-next" aria-label="다음슬라이드"><i class="ic-arrow next"><span class="blind">다음슬라이드</span></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-area">
+                    <div class="tab-view md-mobile on">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd01.png" alt="곽철이 아크릴 스마트톡">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">곽철이 아크릴 스마트톡</span>
+                                        <span class="sel-price" aria-label="할인판매가">29% <strong>9,500</strong></span>
+                                        <span class="cost" aria-label="원가">13,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                        <span class="new-mark">재입고</span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd15.png" alt="iPhone 14 Plus 실리콘 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">Apple</span>
+                                        <span class="name" aria-label="상품명">iPhone 14 Plus 실리콘 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">87% <strong>8,900</strong></span>
+                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
+                                            <span class="like" aria-label="좋아요수">15</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd16.png" alt="iPhone 15 Plus 투명 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">Apple</span>
+                                        <span class="name" aria-label="상품명">iPhone 15 Plus 투명 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">62% <strong>25,900</strong></span>
+                                        <span class="cost" aria-label="원가">69,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">11</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd17.png" alt="iPhone 15 파인우븐 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">Apple</span>
+                                        <span class="name" aria-label="상품명">iPhone 15 파인우븐 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">64% <strong>29,900</strong></span>
+                                        <span class="cost" aria-label="원가">85,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">11</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd18.png" alt="갤럭시S24 FE 스탠딩 그립 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">갤럭시S24 FE 스탠딩 그립 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">18% <strong>44,800</strong></span>
+                                        <span class="cost" aria-label="원가">55,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">1</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd19.png" alt="갤럭시S24 FE 스마트 뷰 월렛 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">갤럭시S24 FE 스마트 뷰 월렛 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">18% <strong>40,400</strong></span>
+                                        <span class="cost" aria-label="원가">49,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd20.png" alt="갤럭시S24 FE 플립수트 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">갤럭시S24 FE 플립수트 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">18% <strong>40,400</strong></span>
+                                        <span class="cost" aria-label="원가">49,500</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd21.png" alt="갤럭시S24 FE 실리콘 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">삼성전자</span>
+                                        <span class="name" aria-label="상품명">갤럭시S24 FE 실리콘 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">13% <strong>28,600</strong></span>
+                                        <span class="cost" aria-label="원가">33,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/mobile-pd22.png" alt="[아이폰16전용] T1 클리어 케이스">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">페스티버</span>
+                                        <span class="name" aria-label="상품명">[아이폰16전용] T1 클리어 케이스</span>
+                                        <span class="sel-price" aria-label="할인판매가">30% <strong>17,400</strong></span>
+                                        <span class="cost" aria-label="원가">24,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">5</span>
+                                        </span>
+                                        <span class="new-mark">T1</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-view md-life">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd01.png" alt="누렁이와 탱고 리무버블 스티커">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">누렁이와 탱고 리무버블 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,500</strong></span>
+                                        <span class="cost" aria-label="원가">5,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                        <div class="new-mark">재입고</div>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd02.png" alt="토심이 토뭉이 엽서 Set">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">토심이 토뭉이 엽서 Set</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">4,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">0</span>
+                                        </span>
+                                        <div class="new-mark">재입고</div>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd16.png" alt="KOA 산토리니 비치쉘터플러스 (3~4인용)">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">코아</span>
+                                        <span class="name" aria-label="상품명">KOA 산토리니 비치쉘터플러스 (3~4인용)</span>
+                                        <span class="sel-price" aria-label="할인판매가">19% <strong>159,000</strong></span>
+                                        <span class="cost" aria-label="원가">198,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">4</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd17.png" alt="테지움 테디베어 캐리온 롤테이블92cm">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">테지움</span>
+                                        <span class="name" aria-label="상품명">테지움 테디베어 캐리온 롤테이블92cm</span>
+                                        <span class="sel-price" aria-label="할인판매가">27% <strong>92,900</strong></span>
+                                        <span class="cost" aria-label="원가">129,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">3</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd18.png" alt="테지움 테디베어 이즐리 허그체어 1P">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">테지움</span>
+                                        <span class="name" aria-label="상품명">테지움 테디베어 이즐리 허그체어 1P</span>
+                                        <span class="sel-price" aria-label="할인판매가">22% <strong>45,900</strong></span>
+                                        <span class="cost" aria-label="원가">59,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">10</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd19.png" alt="에코너-LA09 LEDN 캠핑램프(2색상)">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">에코너</span>
+                                        <span class="name" aria-label="상품명">에코너-LA09 LEDN 캠핑램프(2색상)</span>
+                                        <span class="sel-price" aria-label="할인판매가">3% <strong>30,000</strong></span>
+                                        <span class="cost" aria-label="원가">31,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">18</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd20.png" alt="클리프타운 휴대용 접이식 받침대">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">클리프타운</span>
+                                        <span class="name" aria-label="상품명">클리프타운 휴대용 접이식 받침대</span>
+                                        <span class="sel-price" aria-label="할인판매가">40% <strong>30,000</strong></span>
+                                        <span class="cost" aria-label="원가">50,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(1)</span></span>
+                                            <span class="like" aria-label="좋아요수">7</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd08.png" alt="라떼 캠핑 미니버너 MINI-A">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">맥스</span>
+                                        <span class="name" aria-label="상품명">라떼 캠핑 미니버너 MINI-A</span>
+                                        <span class="sel-price" aria-label="할인판매가">23% <strong>45,900</strong></span>
+                                        <span class="cost" aria-label="원가">59,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">30</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd21.png" alt="ST-ML100 멀티LED등 램프">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">슈틸루스터</span>
+                                        <span class="name" aria-label="상품명">ST-ML100 멀티LED등 램프</span>
+                                        <span class="sel-price" aria-label="할인판매가">26% <strong>14,000</strong></span>
+                                        <span class="cost" aria-label="원가">19,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">9</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd22.png" alt="GEEK캠핑난로 부탄 가스난로SGG-T3103">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">GEEK</span>
+                                        <span class="name" aria-label="상품명">GEEK캠핑난로 부탄 가스난로SGG-T3103</span>
+                                        <span class="sel-price" aria-label="할인판매가">25% <strong>148,000</strong></span>
+                                        <span class="cost" aria-label="원가">199,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">1</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd23.png" alt="테지움 테디베어 피크닉 캠핑매트">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">테지움</span>
+                                        <span class="name" aria-label="상품명">테지움 테디베어 피크닉 캠핑매트</span>
+                                        <span class="sel-price" aria-label="할인판매가">32% <strong>39,900</strong></span>
+                                        <span class="cost" aria-label="원가">59,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">6</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/life-pd24.png" alt="휴대용 초경량 접이식 폴딩 간이 의자">
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">벤토사</span>
+                                        <span class="name" aria-label="상품명">휴대용 초경량 접이식 폴딩 간이 의자</span>
+                                        <span class="sel-price" aria-label="할인판매가">6% <strong>14,900</strong></span>
+                                        <span class="cost" aria-label="원가">15,900</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-view md-digital">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd18.png" alt="플립6 플라워 배경화면 3종">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">티다문구점</span>
+                                        <span class="name" aria-label="상품명">플립6 플라워 배경화면 3종</span>
+                                        <span class="cost normal" aria-label="판매가">0</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">5</span><span
+                                                    class="grade-num" aria-label="리뷰수">(5)</span></span>
+                                            <span class="like" aria-label="좋아요수">6</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd19.png" alt="유화 그림 배경화면 5종">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">홍스튜디오</span>
+                                        <span class="name" aria-label="상품명">유화 그림 배경화면 5종</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>1,000</strong></span>
+                                        <span class="cost" aria-label="원가">2,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd20.png" alt="[AOS] Meow">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">딱지스튜디오</span>
+                                        <span class="name" aria-label="상품명">[AOS] Meow</span>
+                                        <span class="cost normal" aria-label="판매가">1,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">6</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd21.png" alt="[iOS] 나루토마끼 카카오톡 테마">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">쿠키즈</span>
+                                        <span class="name" aria-label="상품명">[iOS] 나루토마끼 카카오톡 테마</span>
+                                        <span class="sel-price" aria-label="할인판매가">50% <strong>1,000</strong></span>
+                                        <span class="cost" aria-label="원가">2,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">3</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd22.png" alt="[AOS] Ma-AH">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">딱지스튜디오</span>
+                                        <span class="name" aria-label="상품명">[AOS] Ma-AH</span>
+                                        <span class="cost normal" aria-label="판매가">1,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">6</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd23.png" alt="(AOS) 피치피치">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">제미나</span>
+                                        <span class="name" aria-label="상품명">(AOS) 피치피치</span>
+                                        <span class="sel-price" aria-label="할인판매가">16% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">2,400</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">3</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd24.png" alt="[AOS] Purr">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">딱지스튜디오</span>
+                                        <span class="name" aria-label="상품명">[AOS] Purr</span>
+                                        <span class="cost normal" aria-label="판매가">1,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">7</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd25.png" alt="(iOS)복숭아 한 개 천원">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">제미나</span>
+                                        <span class="name" aria-label="상품명">(iOS)복숭아 한 개 천원</span>
+                                        <span class="sel-price" aria-label="할인판매가">16% <strong>2,000</strong></span>
+                                        <span class="cost" aria-label="원가">2,400</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">1</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd26.png" alt="귀엽고 작은 동물들 스티커">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">마가렛</span>
+                                        <span class="name" aria-label="상품명">귀엽고 작은 동물들 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">60% <strong>400</strong></span>
+                                        <span class="cost" aria-label="원가">1,000</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">10</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="swiper-slide link-product">
+                                    <span class="pd-thumb">
+                                        <img src="./assets/images/digital-pd27.png" alt="레인보우샤베트 아이스크림 스티커">
+                                        <span class="down-mark"><span class="blind">다운로드</span></span>
+                                    </span>
+                                    <span class="pd-info">
+                                        <span class="category" aria-label="판매처">장뱁새스튜디오</span>
+                                        <span class="name" aria-label="상품명">레인보우샤베트 아이스크림 스티커</span>
+                                        <span class="sel-price" aria-label="할인판매가">68% <strong>500</strong></span>
+                                        <span class="cost" aria-label="원가">1,600</span>
+                                        <span class="review-like">
+                                            <span class="review"><span class="grade" aria-label="평점">0</span><span
+                                                    class="grade-num" aria-label="리뷰수">(0)</span></span>
+                                            <span class="like" aria-label="좋아요수">2</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // 티다문구점 MD 추천 MD PICK -->
+
+            <!-- slogan -->
+            <section class="sc-slogan">
+                <div class="slogan-wrap">
+                    <div class="slogan-shape" aria-hidden="true"></div>
+                    <div class="slogan-text">Everything coool is here.</div>
+                </div>
+            </section>
+            <!-- // slogan -->
+        </div>
+    </main>
+
+    <footer id="footer">
+        <!-- footer pc -->
+        <div class="footer-pc">
+            <div class="footer-top">
+                <div>
+                    <ul class="footer-menu" role="menu">
+                        <li><a href="#" class="link-form" role="menuitem">상품구매약관</a></li>
+                        <li><a href="#" class="link-form" role="menuitem">개인정보처리방침</a></li>
+                    </ul>
+                    <ul class="footer-link" role="menu">
+                        <li><a href="#" class="link-menu" role="menuitem">FAQ</a></li>
+                        <li><a href="#" class="link-menu" role="menuitem">공지사항</a></li>
+                        <li><a href="#" class="link-menu" role="menuitem">제휴문의</a></li>
+                        <li><a href="#" class="link-menu" role="menuitem">티다문구점 소개</a></li>
+                    </ul>
+                </div>
+                <div class="service-center">
+                    <a href="tel:1599-1932">1599-1932</a>
+                    <p>고객센터 평일 09:00 - 18:00 (토/일/공휴일 휴무)
+                        <br>점심시간 12:00 - 13:00
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom-info">
+                <p class="company-name">에스케이텔레콤(주)</p>
+                <ul class="info-flex">
+                    <li>대표이사/사장 유영상</li>
+                    <li>사업자등록번호 104-81-37225</li>
+                    <li>판매허가번호 중구 02923호</li>
+                    <li>서울특별시 중구 을지로 65</li>
+                    <li><a href="#" class="link-menu">사업자정보확인</a></li>
+                </ul>
+                <ul class="info-flex">
+                    <li>피에스앤마케팅(주)</li>
+                    <li>수탁운영업체 : 서울특별시 마포구 마포대로 144(공덕동, 마포티타운)</li>
+                    <li>사장 : 이중호</li>
+                    <li>사업자등록번호 : 104-86-20016</li>
+                    <li>판매허가번호 : 2020-서울마포-1276</li>
+                    <li><a href="#" class="link-menu">사업자정보확인</a></li>
+                </ul>
+                <small>&copy; 티다문구점 Powered by T direct shop</small>
+            </div>
+        </div>
+        <!-- // footer pc -->
+
+        <!-- footer m -->
+        <div class="footer-m">
+            <div class="service-center">
+                <a href="tel:1599-1932" class="call-num">
+                    <i class="ic-phone" aria-hidden="true"></i>
+                    <span>1599-1932</span>
+                </a>
+                <div class="desc">
+                    <p>고객센터 평일 09:00 - 18:00 (토/일/공휴일 휴무)</p>
+                    <p>점심시간 12:00 - 13:00</p>
+                </div>
+            </div>
+
+            <div class="footer-menu">
+                <div class="show-area">
+                    <ul class="footer-link" role="menu">
+                        <li><a href="#" class="link-menu" role="menuitem">FAQ</a></li>
+                        <li><a href="#" class="link-menu" role="menuitem">공지사항</a></li>
+                        <li><a href="#" class="link-menu" role="menuitem">제휴문의</a></li>
+                        <li><a href="#" class="link-menu" role="menuitem">티다문구점 소개</a></li>
+                    </ul>
+                    <button class="btn-toggle"><i class="ic-toggle"><span class="blind">사이트정보 더보기</span></i></button>
+                </div>
+                <div class="company-info desc">
+                    <span>에스케이텔레콤(주)</span>
+                    <div class="flex-box">
+                        <span>대표이사/사장 유영상</span>
+                        <span>사업자등록번호 104-81-37225</span>
+                    </div>
+                    <div class="flex-box">
+                        <span>판매허가번호 중구 02923호</span>
+                        <span>서울특별시 중구 을지로 65</span>
+                    </div>
+                    <div class="empty"></div>
+                    <span>피에스앤마케팅(주) 수탁운영업체</span>
+                    <div class="flex-box">
+                        <span>사장 이중호</span>
+                        <span>사업자등록번호 104-86-20016</span>
+                    </div>
+                    <span>판매허가번호 2020-서울마포-1276</span>
+                    <span>서울특별시 마포구 마포대로 144(공덕동, 마포티타운)</span>
+                </div>
+            </div>
+
+            <ul class="footer-form">
+                <li><a href="#" class="link-form">개인정보처리방침</a></li>
+            </ul>
+
+
+            <small class="copyright desc">&copy; 티다문구점 Powered by T direct shop</small>
+        </div>
+        <!-- // footer m -->
+    </footer>
+
+    <a href="#" id="topBtn">
+        <span class="blind">위로 이동</span>
+        <img src="./assets/images/btn-top.svg" alt>
+    </a>
+</body>
+
+</html>

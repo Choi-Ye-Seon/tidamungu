@@ -1,0 +1,567 @@
+main {
+  margin-top: 20px;
+}
+
+/* sc-banner */
+.sc-banner .swiper {
+  border-radius: 24px;
+}
+.sc-banner .swiper-slide {
+  display: block;
+  position: relative;
+}
+.sc-banner .swiper-slide .visual-m {
+  display: none;
+}
+.sc-banner .swiper-slide .banner-title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.sc-banner .swiper-slide .banner-title strong {
+  font-family: var(--aggro-font);
+  font-size: 76px;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -2.08px;
+  color: #fff;
+}
+.sc-banner .swiper-slide .banner-title span {
+  font-family: var(--suite-font);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.44px;
+  margin-top: 16px;
+  color: #fff;
+}
+.sc-banner .swiper-button-prev,
+.sc-banner .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+.sc-banner .swiper-button-prev {
+  left: 20px;
+}
+.sc-banner .swiper-button-next {
+  right: 20px;
+}
+.sc-banner .swiper-button-prev i,
+.sc-banner .swiper-button-next i {
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/util-sprite.svg);
+  background-position: -156px center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sc-banner .swiper-button-next i {
+  transform: translateX(1px) rotate(180deg);
+}
+.sc-banner .swiper-button-prev:after,
+.sc-banner .swiper-button-next:after {
+  display: none;
+}
+.sc-banner .swiper-control {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 1;
+}
+.sc-banner .slide-fraction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 120px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.sc-banner .slide-fraction .curr {
+  color: #fff;
+  font-weight: 600;
+}
+.sc-banner .slide-fraction .total {
+  display: flex;
+  align-items: center;
+}
+.sc-banner .slide-fraction .total::before {
+  content: '/';
+  margin: 0 5px;
+}
+.sc-banner .btn-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.sc-banner .swiper-play {
+  display: none;
+}
+.sc-banner .swiper-play.play {
+  display: block;
+}
+.sc-banner .swiper-play::before {
+  content: '▶';
+  letter-spacing: -4px;
+}
+.sc-banner .swiper-pause::before {
+  content: '||';
+  font-weight: 700;
+}
+/* sc-banner 미디어쿼리 */
+@media (max-width: 1023px) {
+  .sc-banner .swiper-slide {
+    height: 80vw;
+  }
+  .sc-banner .swiper-slide .visual-m {
+    display: block;
+  }
+  .sc-banner .swiper-slide .visual-pc {
+    display: none;
+  }
+  .sc-banner .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sc-banner .swiper-slide .banner-title strong {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+  }
+  .sc-banner .swiper-slide .banner-title span {
+    font-size: 14px;
+    padding-right: 110px;
+    margin-top: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.28px;
+  }
+  .sc-banner .swiper-button-next,
+  .sc-banner .swiper-button-prev {
+    display: none;
+  }
+  .sc-banner .btn-control {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .sc-banner .slide-fraction {
+    min-width: 60px;
+    padding: 4px 9px;
+    font-size: 12px;
+    height: 30px;
+  }
+}
+/* // sc-banner */
+
+
+/* lottie 배너 */
+.sc-slide-banner {
+  margin-top: 88px;
+}
+/* lottie 배너 미디어쿼리 */
+@media (max-width: 1023px) {
+  .sc-slide-banner {
+    margin-top: 50px;
+  }
+}
+/* // lottie 배너 */
+
+
+/* 지금 뜨는 베스트 */
+.sc-best {
+  display: flex;
+  padding: 0 32px;
+}
+.sc-best .tab-area {
+  width: 350px;
+}
+.sc-best .tab-list {
+  flex-direction: column;
+}
+.sc-best .view-area {
+  flex: 1;
+  margin-top: 32px;
+}
+.sc-best .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 72px 3px;
+}
+.sc-best .link-product .pd-thumb .num-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/number-motion.gif);
+  background-size: 54px;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: var(--favorit-font);
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* 지금 뜨는 베스트 미디어쿼리 */
+@media (max-width: 1023px) {
+  .sc-best {
+    flex-direction: column;
+    padding: 0 14px;
+  }
+  .sc-best .tab-list {
+    flex-direction: row;
+    gap: 4px;
+    padding: 16px 0 10px;
+  }
+  .sc-best .view-area {
+    margin-top: 14px;
+  }
+  .sc-best .product-list {
+    gap: 40px 4px;
+  }
+  .sc-best .link-product .pd-thumb .num-mark {
+    width: 54px;
+    height: 54px;
+    background-size: 44px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:550px){
+  .sc-best .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sc-best .product-item:nth-child(7),
+  .sc-best .product-item:nth-child(8),
+  .sc-best .product-item:nth-child(9) {
+    display: none;
+  }
+}
+/* // 지금 뜨는 베스트 */
+
+
+/* Sticky Banner */
+.sc-sticky-banner {
+  margin-top: 124px;
+}
+.sc-sticky-banner .sticky-item {
+  display: block;
+  position: sticky;
+  width: 100%;
+  height: 810px;
+  left: 0;
+  border-radius: 36px;
+  background-size: 1440px;
+}
+.sc-sticky-banner .sticky-item.t1 {
+  top: 102px;
+  background-image: url(../images/sticky-banner01.jpg);
+}
+.sc-sticky-banner .sticky-item.sports {
+  top: 272px;
+  background-image: url(../images/sticky-banner02.jpg);
+}
+.sc-sticky-banner .sticky-item.coffee {
+  top: 442px;
+  background-image: url(../images/sticky-banner03.jpg);
+}
+.sc-sticky-banner .sticky-item.life {
+  top: 612px;
+  background-image: url(../images/sticky-banner04.jpg);
+}
+.sc-sticky-banner .sticky-item.iPad {
+  top: 782px;
+  background-image: url(../images/sticky-banner05.jpg);
+}
+.sc-sticky-banner .sticky-item span {
+  position: absolute;
+  font-family: var(--aggro-font);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Sticky Banner 미디어쿼리 */
+@media (max-width: 1023px) {
+  .sc-sticky-banner {
+    margin-top: 90px;
+  }
+  .sc-sticky-banner .sticky-item.t1 {
+    height: 500px;
+  }
+  .sc-sticky-banner .sticky-item.sports {
+    top: 162px;
+    height: 440px;
+  }
+  .sc-sticky-banner .sticky-item.coffee {
+    height: 380px;
+    top: 222px;
+  }
+  .sc-sticky-banner .sticky-item.life {
+    top: 282px;
+    height: 320px;
+  }
+  .sc-sticky-banner .sticky-item.iPad {
+    top: 342px;
+    height: 500px;
+  }
+  .sc-sticky-banner .sticky-item span {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+  }
+}
+/* // sticky-banner */
+
+
+/* 놓치면 안될 특가 상품*/
+.sc-hot-sale {
+  padding: 180px 32px 0;
+}
+.sc-hot-sale .tab-area {
+  margin-bottom: 32px;
+}
+/* 놓치면 안될 특가 상품 미디어쿼리*/
+@media (max-width: 1023px) {
+  .sc-hot-sale {
+    padding: 80px 14px 0;
+  }
+  .sc-hot-sale .tab-area {
+    margin-bottom: 24px;
+  }
+}
+/* // 놓치면 안될 특가 상품 */
+
+
+/* 방금 나온 신제품  */
+.sc-new-arrival {
+  padding: 180px 32px 0;
+}
+.sc-new-arrival .new-arrival-wrap {
+  position: relative;
+  width: 1440px;
+  max-width: 100%;
+  height: 800px;
+}
+.sc-new-arrival .swiper {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/new-arrival-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: none;
+}
+.sc-new-arrival .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sc-new-arrival .link-product {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 360px;
+  padding: 20px 16px 20px 16px;
+  border-radius: 8px;
+  gap: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+.sc-new-arrival .swiper-slide-active .link-product {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.sc-new-arrival .swiper-pagination {
+  display: none;
+}
+.sc-new-arrival .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 38px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
+  background-image: url(../images/cursor.png);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s;
+}
+.sc-new-arrival .new-arrival-wrap:hover .cursor {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 방금 나온 신제품 미디어쿼리 */
+@media (max-width: 1023px) {
+  .sc-new-arrival {
+    padding-top: 80px;
+  }
+  .sc-new-arrival .new-arrival-wrap {
+    margin-top: 32px;
+    padding-bottom: 67px;
+  }
+  .sc-new-arrival .swiper {
+    background-size: contain;
+    background-image: url(../images/new-arrival-bg-m.svg);
+  }
+  .sc-new-arrival .link-product {
+    top: 60%;
+    left: 2%;
+  }
+  .sc-new-arrival .swiper-slide img {
+    width: 93.06vw;
+    height: 93.06vw;
+    object-fit: cover;
+  }
+  .sc-new-arrival .swiper-pagination {
+    display: block;
+  }
+  .sc-new-arrival .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    bottom: 0;
+    top: unset;
+    width: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sc-new-arrival .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #000;
+  }
+  .sc-new-arrival .swiper {
+    cursor: pointer;
+  }
+  .sc-new-arrival .cursor {
+    display: none; 
+  }
+}
+/* 방금 나온 신제품 */
+
+
+/* 티다문구점 MD 추천 */
+.sc-md-pick {
+  padding: 180px 32px 0;
+}
+.sc-md-pick .tab-area {
+  margin-bottom: 32px;
+}
+/* 티다문구점 MD 추천 미디어쿼리*/
+@media (max-width: 1023px) {
+  .sc-md-pick {
+    margin-top: 80px;
+    padding: 0 14px;
+  }
+}
+/* // 티다문구점 MD 추천 */
+
+
+/* Slogan */
+.sc-slogan {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+.sc-slogan .slogan-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sc-slogan .slogan-shape {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  width: 327px;
+  height: 320px;
+  transform: translate(-50%, 0);
+  background-image: url(../images/logo-shape.svg);
+  background-repeat: no-repeat;
+}
+.sc-slogan .slogan-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 772px;
+  height: 115px;
+  background-color: #1c1c1b;
+  color: #fff;
+  border-radius: 500px;
+  z-index: 2;
+  font-family: var(--favorit-font);
+  font-size: 66px;
+  font-weight: 400;
+  letter-spacing: -1.98px;
+}
+
+/* Slogan 미디어쿼리*/
+@media (max-width: 1023px) {
+  .sc-slogan {
+    height: 300px;
+  }
+  .sc-slogan .slogan-text {
+    height: 48px;
+    width: max-content;
+    font-size: 28px;
+    padding: 14.284px 12.52px 13.716px 17.48px;
+    bottom: unset;
+    top: 150px;
+  }
+  .sc-slogan .slogan-shape {
+    width: 130px;
+    height: 130px;
+    background-size: 130px;
+    background-position: center;
+    bottom: unset;
+    top: 110px;
+  }
+}
+/* // Slogan */
